@@ -1,0 +1,6 @@
+{
+  "extends": "tslint:latest",
+  "linterOptions": {
+    "exclude": ["src/grammar.ts"]
+  }
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "functionName": "DATE",
+    "description": "Calculates a date specified by year, month, day, and displays it in the cell's formatting.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "DATEDIF",
+    "description": "Calculates distance between two dates, in provided unit parameter.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "DATEVALUE",
+    "description": "Interprets string as date.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "DAY",
+    "description": "Returns the day of the given date value.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "DAYS",
+    "description": "Calculates the difference between two date values.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "DAYS360",
+    "description": "Calculates the difference between two date values in days, in 360-day basis.",
+    "numberOfParams": [2, 3]
+  },
+  {
+    "functionName": "EDATE",
+    "description": "Shifts the given startdate by given number of months.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "EOMONTH",
+    "description": "Returns the date of the last day of a month which falls months away from the start date.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "HOUR",
+    "description": "Returns hour component of given time.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "INTERVAL",
+    "description": "Returns interval string from given number of seconds.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "ISOWEEKNUM",
+    "description": "Returns an ISO week number that corresponds to the week of year.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "MINUTE",
+    "description": "Returns minute component of given time.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "MONTH",
+    "description": "Returns the month for the given date value.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "NETWORKDAYS",
+    "description": "Returns the number of working days between two given dates.",
+    "numberOfParams": [2, 3]
+  },
+  {
+    "functionName": "NETWORKDAYS.INTL",
+    "description": "Returns the number of working days between two given dates.",
+    "numberOfParams": [2, 3, 4]
+  },
+  {
+    "functionName": "NOW",
+    "description": "Returns current date + time.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "SECOND",
+    "description": "Returns second component of given time.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "TIME",
+    "description": "Calculates time from given hour, minute and second.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "TIMEVALUE",
+    "description": "Interprets string as time.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "TODAY",
+    "description": "Returns current date.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "WEEKDAY",
+    "description": "Computes a number between 1-7 representing the day of week.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "WEEKNUM",
+    "description": "Returns a week number that corresponds to the week of year.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "WORKDAY",
+    "description": "Returns the working day number of days from start day.",
+    "numberOfParams": [2, 3]
+  },
+  {
+    "functionName": "WORKDAY.INTL",
+    "description": "Returns the working day number of days from start day.",
+    "numberOfParams": [2, 3, 4]
+  },
+  {
+    "functionName": "YEAR",
+    "description": "Returns the year as a number according to the internal calculation rules.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "YEARFRAC",
+    "description": "Computes the difference between two date values, in fraction of years.",
+    "numberOfParams": [2, 3]
+  }
+]

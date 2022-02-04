@@ -1,0 +1,24 @@
+{
+  "name": "formula-parser-editor",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "generate:grammar:json": "ts-node grammar-generator.ts",
+    "build:grammar": "cd src && lezer-generator language.grammar -o grammar.ts"
+  },
+  "dependencies": {
+    "@codemirror/basic-setup": "^0.19.1",
+    "@codemirror/closebrackets": "^0.19.0",
+    "@codemirror/highlight": "^0.19.7",
+    "@codemirror/lint": "^0.19.3",
+    "@lezer/generator": "^0.15.3",
+    "codemirror": "^5.65.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
+  }
+}

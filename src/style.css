@@ -1,0 +1,8 @@
+#app {
+  font-size: 2rem;
+  width: 30rem;
+}
+body {
+  padding: 10rem;
+  display: flex;
+}

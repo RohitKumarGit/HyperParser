@@ -1,0 +1,45 @@
+@top Program {expression*}
+expression { Operation  |  String | tep}
+
+tep { Variable | Number | Functions}
+Operation {  Variable  Assign expression | tep ArtithMeticOperators tep | tep LogicalOperators tep  }
+ Functions {DATE "(" tep','tep','tep ")"|DATEDIF "(" tep','tep','tep ")"|DATEVALUE "("  ")"|DAY "("  ")"|DAYS "(" tep','tep ")"|DAYS360 "(" tep','tep ")"|DAYS360 "(" tep','tep','tep ")"|EDATE "(" tep','tep ")"|EOMONTH "(" tep','tep ")"|HOUR "("  ")"|INTERVAL "("  ")"|ISOWEEKNUM "("  ")"|MINUTE "("  ")"|MONTH "("  ")"|NETWORKDAYS "(" tep','tep ")"|NETWORKDAYS "(" tep','tep','tep ")"|NETWORKDAYSINTL "(" tep','tep ")"|NETWORKDAYSINTL "(" tep','tep','tep ")"|NETWORKDAYSINTL "(" tep','tep','tep','tep ")"|NOW "("  ")"|SECOND "("  ")"|TIME "(" tep','tep','tep ")"|TIMEVALUE "("  ")"|TODAY "("  ")"|WEEKDAY "(" tep','tep ")"|WEEKNUM "(" tep','tep ")"|WORKDAY "(" tep','tep ")"|WORKDAY "(" tep','tep','tep ")"|WORKDAYINTL "(" tep','tep ")"|WORKDAYINTL "(" tep','tep','tep ")"|WORKDAYINTL "(" tep','tep','tep','tep ")"|YEAR "("  ")"|YEARFRAC "(" tep','tep ")"|YEARFRAC "(" tep','tep','tep ")"}
+@tokens {
+  Variable { "$"std.asciiLetter+}
+DATE { "DATE"}
+DATEDIF { "DATEDIF"}
+DATEVALUE { "DATEVALUE"}
+DAY { "DAY"}
+DAYS { "DAYS"}
+DAYS360 { "DAYS360"}
+EDATE { "EDATE"}
+EOMONTH { "EOMONTH"}
+HOUR { "HOUR"}
+INTERVAL { "INTERVAL"}
+ISOWEEKNUM { "ISOWEEKNUM"}
+MINUTE { "MINUTE"}
+MONTH { "MONTH"}
+NETWORKDAYS { "NETWORKDAYS"}
+NETWORKDAYSINTL { "NETWORKDAYS.INTL"}
+NOW { "NOW"}
+SECOND { "SECOND"}
+TIME { "TIME"}
+TIMEVALUE { "TIMEVALUE"}
+TODAY { "TODAY"}
+WEEKDAY { "WEEKDAY"}
+WEEKNUM { "WEEKNUM"}
+WORKDAY { "WORKDAY"}
+WORKDAYINTL { "WORKDAY.INTL"}
+YEAR { "YEAR"}
+YEARFRAC { "YEARFRAC"}
+
+Number {std.digit+} 
+String { '"' std.asciiLetter* '"'}
+Assign {"="}
+ArtithMeticOperators {("+"|"*"|"-")}
+LogicalOperators {("&&" | "||")}
+"["
+ "(" ")" "[" "]" "{" "}"
+
+@precedence{variable}
+}
