@@ -5,15 +5,34 @@ import {
 } from "./formula-language";
 import "./style.css";
 import dateAndTime from "./function-definitions/dateAndTime.json";
+import statistical from './function-definitions/statistical.json'
+const funtions = [dateAndTime,statistical]
+const autoCompletionOptions = []
+const functionNames : string[]= []
+funtions.forEach(fn=>{
+  
+  fn.forEach(def=>{
+      functionNames.push(def.functionName)
+        autoCompletionOptions.push({
+        label: def.functionName,
+        type: COMPLETION_TYPES.KEYWORD,
+        info: def.description,
+      })
+  })
+  
+})
+const variableNames = ["single_sel","$status"]
+variableNames.forEach(t=>{
+  autoCompletionOptions.push({
+    label:t,
+    type : COMPLETION_TYPES.VARIABLE,
+   
+    apply : `{${t}}`
+  })
+})
 import { tags } from "@codemirror/highlight";
-const functionNames = dateAndTime.map((def) => def.functionName);
-const autoCompletionOptions = dateAndTime.map((def) => {
-  return {
-    label: def.functionName,
-    type: COMPLETION_TYPES.KEYWORD,
-    info: def.description,
-  };
-});
+
+
 const formulaLanguage = new FormulaLanguage({
   styleTags: TokenConfig,
   functionNames: functionNames,

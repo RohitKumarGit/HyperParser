@@ -1,0 +1,17 @@
+[
+  {
+    "functionName": "ARRAYFORMULA",
+    "description": "Enables array arithmetic inside.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "FILTER",
+    "description": "Filters the array based on boolean arrays.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "ARRAY_CONSTRAIN",
+    "description": "Truncates the array to given dimensions.",
+    "numberOfParams": [-1]
+  }
+]

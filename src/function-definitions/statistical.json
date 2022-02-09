@@ -1,0 +1,658 @@
+[
+  {
+    "functionName": "AVEDEV",
+    "description": "Returns the average deviation of the arguments.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "AVERAGE",
+    "description": "Returns the average of the arguments.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "AVERAGEA",
+    "description": "Returns the average of the arguments.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "AVERAGEIF",
+    "description": "Returns the arithmetic mean of all cells in a range that satisfy a given condition.",
+    "numberOfParams": [2, 3]
+  },
+  {
+    "functionName": "BESSELI",
+    "description": "Returns value of Bessel function.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "BESSELJ",
+    "description": "Returns value of Bessel function.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "BESSELK",
+    "description": "Returns value of Bessel function.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "BESSELY",
+    "description": "Returns value of Bessel function.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "BETA.DIST",
+    "description": "Returns the denisty of Beta distribution.",
+    "numberOfParams": [4, 5, 6]
+  },
+  {
+    "functionName": "BETADIST",
+    "description": "Returns the denisty of Beta distribution.",
+    "numberOfParams": [4, 5, 6]
+  },
+  {
+    "functionName": "BETA.INV",
+    "description": "Returns the inverse Beta distribution value.",
+    "numberOfParams": [3, 4, 5]
+  },
+  {
+    "functionName": "BETAINV",
+    "description": "Returns the inverse of Beta distribution value.",
+    "numberOfParams": [3, 4, 5]
+  },
+  {
+    "functionName": "BINOM.DIST",
+    "description": "Returns density of binomial distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "BINOMDIST",
+    "description": "Returns density of binomial distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "BINOM.INV",
+    "description": "Returns inverse binomial distribution value.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "CHIDIST",
+    "description": "Returns probability of chi-square right-side distribution.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "CHIINV",
+    "description": "Returns inverse of chi-square right-side distribution.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "CHIINVRT",
+    "description": "Returns inverse of chi-square right-side distribution.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "CHISQ.DIST",
+    "description": "Returns value of chi-square distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "CHIDISTRT",
+    "description": "Returns probability of chi-square right-side distribution.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "CHISQ.DIST.RT",
+    "description": "Returns probability of chi-square right-side distribution.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "CHISQ.INV",
+    "description": "Returns inverse of chi-square distribution.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "CHISQ.INV.RT",
+    "description": "Returns inverse of chi-square right-side distribution.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "CHISQ.TEST",
+    "description": "Returns chisquared-test value for a dataset.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "CHITEST",
+    "description": "Returns chisquared-test value for a dataset.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "CONFIDENCE",
+    "description": "Returns upper confidence bound for normal distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "CONFIDENCE.NORM",
+    "description": "Returns upper confidence bound for normal distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "CONFIDENCE.T",
+    "description": "Returns upper confidence bound for T distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "CORREL",
+    "description": "Returns the correlation coefficient between two data sets.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "COUNT",
+    "description": "Counts how many numbers are in the list of arguments.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "COUNTA",
+    "description": "Counts how many values are in the list of arguments.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "COUNTBLANK",
+    "description": "Returns the number of empty cells.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "COUNTIF",
+    "description": "Returns the number of cells that meet with certain criteria within a cell range.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "COUNTIFS",
+    "description": "Returns the count of rows or columns that meet criteria in multiple ranges.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "COVAR",
+    "description": "Returns the covariance between two data sets, population normalized.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "COVARIANCE.P",
+    "description": "Returns the covariance between two data sets, population normalized.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "COVARIANCEP",
+    "description": "Returns the covariance between two data sets, population normalized.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "COVARIANCE.S",
+    "description": "Returns the covariance between two data sets, sample normalized.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "COVARIANCES",
+    "description": "Returns the covariance between two data sets, sample normalized.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "CRITBINOM",
+    "description": "Returns inverse binomial distribution value.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "DEVSQ",
+    "description": "Returns sum of squared deviations.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "EXPON.DIST",
+    "description": "Returns density of a exponential distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "EXPONDIST",
+    "description": "Returns density of a exponential distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "FDIST",
+    "description": "Returns probability of F right-side distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "FINV",
+    "description": "Returns inverse of F right-side distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "F.DIST",
+    "description": "Returns value of F distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "F.DIST.RT",
+    "description": "Returns probability of F right-side distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "FDISTRT",
+    "description": "Returns probability of F right-side distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "F.INV",
+    "description": "Returns inverse of F distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "F.INV.RT",
+    "description": "Returns inverse of F right-side distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "FINVRT",
+    "description": "Returns inverse of F right-side distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "FISHER",
+    "description": "Returns Fisher transformation value.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "FISHERINV",
+    "description": "Returns inverse Fischer transformation value.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "F.TEST",
+    "description": "Returns f-test value for a dataset.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "FTEST",
+    "description": "Returns f-test value for a dataset.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "GAMMA",
+    "description": "Returns value of Gamma function.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "GAMMA.DIST",
+    "description": "Returns density of Gamma distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "GAMMADIST",
+    "description": "Returns density of Gamma distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "GAMMALN",
+    "description": "Returns natural logarithm of Gamma function.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "GAMMALN.PRECISE",
+    "description": "Returns natural logarithm of Gamma function.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "GAMMA.INV",
+    "description": "Returns inverse Gamma distribution value.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "GAMMAINV",
+    "description": "Returns inverse Gamma distribution value.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "GAUSS",
+    "description": "Returns the probability of gaussian variable fall more than this many times standard deviation from mean.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "GEOMEAN",
+    "description": "Returns the geometric average.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "HARMEAN",
+    "description": "Returns the harmonic average.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "HYPGEOMDIST",
+    "description": "Returns density of hypergeometric distribution.",
+    "numberOfParams": [5]
+  },
+  {
+    "functionName": "HYPGEOM.DIST",
+    "description": "Returns density of hypergeometric distribution.",
+    "numberOfParams": [5]
+  },
+  {
+    "functionName": "LARGE",
+    "description": "Returns k-th largest value in a range.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "LOGNORM.DIST",
+    "description": "Returns density of lognormal distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "LOGNORMDIST",
+    "description": "Returns density of lognormal distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "LOGNORM.INV",
+    "description": "Returns value of inverse lognormal distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "LOGNORMINV",
+    "description": "Returns value of inverse lognormal distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "LOGINV",
+    "description": "Returns value of inverse lognormal distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "MAX",
+    "description": "Returns the maximum value in a list of arguments.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "MAXA",
+    "description": "Returns the maximum value in a list of arguments.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "MEDIAN",
+    "description": "Returns the median of a set of numbers.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "MIN",
+    "description": "Returns the minimum value in a list of arguments.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "MINA",
+    "description": "Returns the minimum value in a list of arguments.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "NEGBINOM.DIST",
+    "description": "Returns density of negative binomial distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "NEGBINOMDIST",
+    "description": "Returns density of negative binomial distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "NORM.DIST",
+    "description": "Returns density of normal distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "NORMDIST",
+    "description": "Returns density of normal distribution.",
+    "numberOfParams": [2, 4]
+  },
+  {
+    "functionName": "NORM.S.DIST",
+    "description": "Returns density of normal distribution.",
+    "numberOfParams": [2]
+  },
+
+  {
+    "functionName": "NORM.INV",
+    "description": "Returns value of inverse normal distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "NORMINV",
+    "description": "Returns value of inverse normal distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "NORM.S.INV",
+    "description": "Returns value of inverse normal distribution.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "NORMSINV",
+    "description": "Returns value of inverse normal distribution.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "PEARSON",
+    "description": "Returns the correlation coefficient between two data sets.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "PHI",
+    "description": "Returns probability densitity of normal distribution.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "POISSON",
+    "description": "Returns density of Poisson distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "POISSON.DIST",
+    "description": "Returns density of Poisson distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "POISSONDIST",
+    "description": "Returns density of Poisson distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "RSQ",
+    "description": "Returns the squared correlation coefficient between two data sets.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "SKEW",
+    "description": "Returns skeweness of a sample.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "SKEW.P",
+    "description": "Returns skeweness of a population.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "SKEWP",
+    "description": "Returns skeweness of a population.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "SLOPE",
+    "description": "Returns the slope of a linear regression line.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "SMALL",
+    "description": "Returns k-th smallest value in a range.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "STANDARDIZE",
+    "description": "Returns normalized value wrt expected value and standard deviation.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "STDEV",
+    "description": "Returns standard deviation of a sample.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "STDEVA",
+    "description": "Returns standard deviation of a sample.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "STDEVP",
+    "description": "Returns standard deviation of a population.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "STDEV.P",
+    "description": "Returns standard deviation of a population.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "STDEVPA",
+    "description": "Returns standard deviation of a population.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "STDEV.S",
+    "description": "Returns standard deviation of a sample.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "STDEVS",
+    "description": "Returns standard deviation of a sample.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "STEYX",
+    "description": "Returns standard error for predicted of the predicted y value for each x value.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "TDIST",
+    "description": "Returns density of Student-t distribution, both-sided or right-tailed.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "T.DIST",
+    "description": "Returns density of Student-t distribution.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "T.DIST.2T",
+    "description": "Returns density of Student-t distribution, both-sided.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "TDIST2T",
+    "description": "Returns density of Student-t distribution, both-sided.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "T.DIST.RT",
+    "description": "Returns density of Student-t distribution, right-tailed.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "TDISTRT",
+    "description": "Returns density of Student-t distribution, right-tailed.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "TINV",
+    "description": "Returns inverse Student-t distribution, both-sided.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "T.INV",
+    "description": "Returns inverse Student-t distribution.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "T.INV.2T",
+    "description": "Returns inverse Student-t distribution, both-sided.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "TINV2T",
+    "description": "Returns inverse Student-t distribution, both-sided.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "TTEST",
+    "description": "Returns t-test value for a dataset.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "T.TEST",
+    "description": "Returns t-test value for a dataset.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "VAR",
+    "description": "Returns variance of a sample.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "VARA",
+    "description": "Returns variance of a sample.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "VARP",
+    "description": "Returns variance of a population.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "VAR.P",
+    "description": "Returns variance of a population.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "VARPA",
+    "description": "Returns variance of a population.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "VAR.S",
+    "description": "Returns variance of a sample.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "VARS",
+    "description": "Returns variance of a sample.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "WEIBULL",
+    "description": "Returns density of Weibull distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "WEIBULL.DIST",
+    "description": "Returns density of Weibull distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "WEIBULLDIST",
+    "description": "Returns density of Weibull distribution.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "Z.TEST",
+    "description": "Returns z-test value for a dataset.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "ZTEST",
+    "description": "Returns z-test value for a dataset.",
+    "numberOfParams": [-1]
+  }
+]

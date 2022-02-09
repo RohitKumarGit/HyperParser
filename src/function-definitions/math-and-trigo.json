@@ -1,0 +1,385 @@
+[
+  {
+    "functionName": "ABS",
+    "description": "Returns the absolute value of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ACOS",
+    "description": "Returns the inverse trigonometric cosine of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ACOSH",
+    "description": "Returns the inverse hyperbolic cosine of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ACOT",
+    "description": "Returns the inverse trigonometric cotangent of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ACOTH",
+    "description": "Returns the inverse hyperbolic cotangent of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ARABIC",
+    "description": "Converts number from roman form.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ASIN",
+    "description": "Returns the inverse trigonometric sine of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ASINH",
+    "description": "Returns the inverse hyperbolic sine of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ATAN",
+    "description": "Returns the inverse trigonometric tangent of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ATAN2",
+    "description": "Returns the inverse trigonometric tangent of the specified x and y coordinates.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "ATANH",
+    "description": "Returns the inverse hyperbolic tangent of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "BASE",
+    "description": "Converts a positive integer to a specified base into a text from the numbering system.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "CEILING",
+    "description": "Rounds a number up to the nearest multiple of Significance.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "CEILING.MATH",
+    "description": "Rounds a number up to the nearest multiple of Significance.",
+    "numberOfParams": [1, 2, 3]
+  },
+  {
+    "functionName": "CEILING.PRECISE",
+    "description": "Rounds a number up to the nearest multiple of Significance.",
+    "numberOfParams": [1, 2]
+  },
+  {
+    "functionName": "COMBIN",
+    "description": "Returns number of combinations (without repetitions).",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "COMBINA",
+    "description": "Returns number of combinations (with repetitions).",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "COS",
+    "description": "Returns the cosine of the given angle (in radians).",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "COSH",
+    "description": "Returns the hyperbolic cosine of the given value.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "COT",
+    "description": "Returns the cotangent of the given angle (in radians).",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "COTH",
+    "description": "Returns the hyperbolic cotangent of the given value.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "COUNTUNIQUE",
+    "description": "Counts the number of unique values in a list of specified values and ranges.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "CSC",
+    "description": "Returns the cosecans of the given angle (in radians).",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "CSCH",
+    "description": "Returns the hyperbolic cosecant of the given value.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "DECIMAL",
+    "description": "Converts text with characters from a number system to a positive integer in the base radix given.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "DEGREES",
+    "description": "Converts radians into degrees.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "EVEN",
+    "description": "Rounds a positive number up to the next even integer and a negative number down to the next even integer.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "EXP",
+    "description": "Returns constant e raised to the power of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "FACT",
+    "description": "Returns a factorial of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "FACTDOUBLE",
+    "description": "Returns a double factorial of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "FLOOR",
+    "description": "Rounds a number down to the nearest multiple of Significance.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "FLOOR.MATH",
+    "description": "Rounds a number down to the nearest multiple of Significance.",
+    "numberOfParams": [
+      "FLOOR.MATH",
+      "Rounds a number down to the nearest multiple of Significance.",
+      "FLOOR.MATH(Number[; Significance[; Mode]])"
+    ]
+  },
+  {
+    "functionName": "FLOOR.PRECISE",
+    "description": "Rounds a number down to the nearest multiple of Significance.",
+    "numberOfParams": [1, 2]
+  },
+  {
+    "functionName": "GCD",
+    "description": "Computes greatest common divisor of numbers.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "INT",
+    "description": "Rounds a number down to the nearest integer.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISO.CEILING",
+    "description": "Rounds a number up to the nearest multiple of Significance.",
+    "numberOfParams": [1, 2]
+  },
+  {
+    "functionName": "LCM",
+    "description": "Computes least common multiplicity of numbers.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "LN",
+    "description": "Returns the natural logarithm based on the constant e of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "LOG",
+    "description": "Returns the logarithm of a number to the specified base.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "LOG10",
+    "description": "Returns the base-10 logarithm of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "MOD",
+    "description": "Returns the remainder when one integer is divided by another.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "MROUND",
+    "description": "Rounds number to the neares multiplicity.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "MULTINOMIAL",
+    "description": "Returns number of multiset combinations.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "ODD",
+    "description": "Rounds a positive number up to the nearest odd integer and a negative number down to the nearest odd integer.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "PI",
+    "description": "Returns 3.14159265358979, the value of the mathematical constant PI to 14 decimal places.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "POWER",
+    "description": "Returns a number raised to another number.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "PRODUCT",
+    "description": "Returns product of numbers.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "QUOTIENT",
+    "description": "Returns integer part of a division.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "RADIANS",
+    "description": "Converts degrees to radians.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "RAND",
+    "description": "Returns a random number between 0 and 1.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "RANDBETWEEN",
+    "description": "Returns a random integer between two numbers.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "ROMAN",
+    "description": "Converts number to roman form.",
+    "numberOfParams": [
+      "ROMAN",
+      "Converts number to roman form.",
+      "ROMAN(Number[; Mode])"
+    ]
+  },
+  {
+    "functionName": "ROUND",
+    "description": "Rounds a number to a certain number of decimal places.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "ROUNDDOWN",
+    "description": "Rounds a number down, toward zero, to a certain precision.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "ROUNDUP",
+    "description": "Rounds a number up, away from zero, to a certain precision.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "SEC",
+    "description": "Returns the secant of the given angle (in radians).",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "SECH",
+    "description": "Returns the hyperbolic secant of the given angle (in radians).",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "SERIESSUM",
+    "description": "Evaluates series at a point.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "SIN",
+    "description": "Returns the sine of the given angle (in radians).",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "SINH",
+    "description": "Returns the hyperbolic sine of the given value.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "SIGN",
+    "description": "Returns sign of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "SQRT",
+    "description": "Returns the positive square root of a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "SQRTPI",
+    "description": "Returns sqrt of number times pi.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "SUBTOTAL",
+    "description": "Computes aggregation using function specified by number.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "SUM",
+    "description": "Adds all the numbers in a range of cells.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "SUMIF",
+    "description": "Adds the cells specified by given criteria.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "SUMIFS",
+    "description": "Returns the sum of the values of cells in a range that meets multiple criteria in multiple ranges.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "SUMPRODUCT",
+    "description": "Multiplies corresponding elements in the given arrays, and returns the sum of those products.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "SUMSQ",
+    "description": "Returns the sum of the squares of the arguments",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "SUMX2MY2",
+    "description": "Returns the sum of the square differences.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "SUMX2PY2",
+    "description": "Returns the sum of the square sums.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "SUMXMY2",
+    "description": "Returns the sum of the square of differences.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "TAN",
+    "description": "Returns the tangent of the given angle (in radians).",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "TANH",
+    "description": "Returns the hyperbolic tangent of the given value.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "TRUNC",
+    "description": "Truncates a number by removing decimal places.",
+    "numberOfParams": [2]
+  }
+]

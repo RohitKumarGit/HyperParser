@@ -1,0 +1,82 @@
+[
+  {
+    "functionName": "ISBINARY",
+    "description": "Returns TRUE if provided value is a valid binary number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISBLANK",
+    "description": "Returns TRUE if the reference to a cell is blank.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISERR",
+    "description": "Returns TRUE if the value is error value except #N/A!.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISERROR",
+    "description": "Returns TRUE if the value is general error value.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISEVEN",
+    "description": "Returns TRUE if the value is an even integer, or FALSE if the value is odd.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISFORMULA",
+    "description": "Checks whether referenced cell is a formula.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISLOGICAL",
+    "description": "Tests for a logical value (TRUE or FALSE).",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISNA",
+    "description": "Returns TRUE if the value is #N/A! error.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISNONTEXT",
+    "description": "Tests if the cell contents are text or numbers, and returns FALSE if the contents are text.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISNUMBER",
+    "description": "Returns TRUE if the value refers to a number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISODD",
+    "description": "Returns TRUE if the value is odd, or FALSE if the number is even.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISREF",
+    "description": "Returns TRUE if provided value is #REF! error.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "ISTEXT",
+    "description": "Returns TRUE if the cell contents refer to text.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "SHEET",
+    "description": "Returns sheet number of a given value or a formula sheet number if no argument is provided.",
+    "numberOfParams": [0, 1]
+  },
+  {
+    "functionName": "SHEETS",
+    "description": "Returns number of sheet of a given reference or number of all sheets in workbook when no argument is provided.",
+    "numberOfParams": [0, 1]
+  },
+  {
+    "functionName": "NA",
+    "description": "Returns #N/A! error value.",
+    "numberOfParams": [1]
+  }
+]

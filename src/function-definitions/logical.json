@@ -1,0 +1,52 @@
+[
+  {
+    "functionName": "AND",
+    "description": "Returns TRUE if all arguments are TRUE.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "FALSE",
+    "description": "Returns the logical value FALSE.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "IF",
+    "description": "Specifies a logical test to be performed.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "IFNA",
+    "description": "Returns the value if the cell does not contains the #N/A (value not available) error value, or the alternative value if it does.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "IFERROR",
+    "description": "Returns the value if the cell does not contains an error value, or the alternative value if it does.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "NOT",
+    "description": "Complements (inverts) a logical value.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "SWITCH",
+    "description": "Evaluates a list of arguments, consisting of an expression followed by a value.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "OR",
+    "description": "Returns TRUE if at least one argument is TRUE.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "TRUE",
+    "description": "The logical value is set to TRUE.",
+    "numberOfParams": [0]
+  },
+  {
+    "functionName": "XOR",
+    "description": "Returns true if an odd number of arguments evaluates to TRUE.",
+    "numberOfParams": [-1]
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "functionName": "CHAR",
+    "description": "Converts a number into a character according to the current code table.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "CLEAN",
+    "description": "Returns text that has been \"cleaned\" of line breaks and other non-printable characters.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "CODE",
+    "description": "Returns a numeric code for the first character in a text string.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "CONCATENATE",
+    "description": "Combines several text strings into one string.",
+    "numberOfParams": [-1]
+  },
+  {
+    "functionName": "EXACT",
+    "description": "Returns TRUE if both text strings are exactly the same.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "FIND",
+    "description": "Returns the location of one text string inside another.",
+    "numberOfParams": [2, 3]
+  },
+  {
+    "functionName": "LEFT",
+    "description": "Extracts a given number of characters from the left side of a text string.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "LEN",
+    "description": "Returns length of a given text.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "LOWER",
+    "description": "Returns text converted to lowercase.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "MID",
+    "description": "Returns substring of a given length starting from Start_position.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "PROPER",
+    "description": "Capitalizes words given text string.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "REPLACE",
+    "description": "Replaces substring of a text of a given length that starts at given position.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "REPT",
+    "description": "Repeats text a given number of times.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "RIGHT",
+    "description": "Extracts a given number of characters from the right side of a text string.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "SEARCH",
+    "description": "Returns the location of one text string inside another. (Allows the use of wildcards.)",
+    "numberOfParams": [2, 3]
+  },
+  {
+    "functionName": "SPLIT",
+    "description": "Divides text around a specified character or string, and puts each fragment into a separate cell in the row.",
+    "numberOfParams": [2, 3, 4]
+  },
+  {
+    "functionName": "SUBSTITUTE",
+    "description": "Returns string where occurrences of Old_text are replaced by New_text. Replaces only specific occurrence if last parameter is provided.",
+    "numberOfParams": [3, 4]
+  },
+  {
+    "functionName": "T",
+    "description": "Returns text if given value is text, empty string otherwise.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "TEXT",
+    "description": "Converts a number into text according to a given format.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "TRIM",
+    "description": "Strips extra spaces from text.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "UNICHAR",
+    "description": "Returns the character created by using provided code point.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "UNICODE",
+    "description": "Returns the Unicode code point of a first character of a text.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "UPPER",
+    "description": "Returns text converted to uppercase.",
+    "numberOfParams": [1]
+  }
+]

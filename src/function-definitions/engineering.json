@@ -1,0 +1,232 @@
+[
+  {
+    "functionName": "BIN2DEC",
+    "description": "The result is the decimal number for the binary number entered.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "BIN2HEX",
+    "description": "The result is the hexadecimal number for the binary number entered.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "BIN2OCT",
+    "description": "The result is the octal number for the binary number entered.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "BITAND",
+    "description": "Returns a bitwise logical \"and\" of the parameters.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "BITLSHIFT",
+    "description": "Shifts a number left by n bits.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "BITOR",
+    "description": "Returns a bitwise logical \"or\" of the parameters.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "BITRSHIFT",
+    "description": "Shifts a number right by n bits.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "BITXOR",
+    "description": "Returns a bitwise logical \"exclusive or\" of the parameters.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "COMPLEX",
+    "description": "Returns complex number from Re and Im parts.",
+    "numberOfParams": [2, 3]
+  },
+  {
+    "functionName": "DEC2BIN",
+    "description": "Returns the binary number for the decimal number entered between –512 and 511.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "DEC2HEX",
+    "description": "Returns the hexadecimal number for the decimal number entered.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "DEC2OCT",
+    "description": "Returns the octal number for the decimal number entered.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "DELTA",
+    "description": "Returns TRUE (1) if both numbers are equal, otherwise returns FALSE (0).",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "ERF",
+    "description": "Returns values of the Gaussian error integral.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "ERFC",
+    "description": "Returns complementary values of the Gaussian error integral between x and infinity.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "HEX2BIN",
+    "description": "The result is the binary number for the hexadecimal number entered.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "HEX2DEC",
+    "description": "The result is the decimal number for the hexadecimal number entered.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "HEX2OCT",
+    "description": "The result is the octal number for the hexadecimal number entered.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "IMABS",
+    "description": "Returns module of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMAGINARY",
+    "description": "Returns imaginary part of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMARGUMENT",
+    "description": "Returns argument of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMCONJUGATE",
+    "description": "Returns conjugate of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMCOS",
+    "description": "Returns cosine of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMCOSH",
+    "description": "Returns hyperbolic cosine of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMCOT",
+    "description": "Returns cotangens of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMCSC",
+    "description": "Returns cosecans of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMCSCH",
+    "description": "Returns hyperbolic cosecans of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMDIV",
+    "description": "Divides two complex numbers.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "IMEXP",
+    "description": "Returns exponent of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMLN",
+    "description": "Returns natural logarithm of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMLOG2",
+    "description": "Returns binary logarithm of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMLOG10",
+    "description": "Returns base-10 logarithm of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMPOWER",
+    "description": "Returns a complex number raised to a given power.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "IMPRODUCT",
+    "description": "Multiplies complex numbers.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMREAL",
+    "description": "Returns real part of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMSEC",
+    "description": "Returns the secant of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMSECH",
+    "description": "Returns the hyperbolic secant of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMSIN",
+    "description": "Returns sine of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMSINH",
+    "description": "Returns hyperbolic sine of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMSQRT",
+    "description": "Returns a square root of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMSUB",
+    "description": "Subtracts two complex numbers.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "IMSUM",
+    "description": "Adds complex numbers.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "IMTAN",
+    "description": "Returns the tangent of a complex number.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "OCT2BIN",
+    "description": "The result is the binary number for the octal number entered.",
+    "numberOfParams": [2]
+  },
+  {
+    "functionName": "OCT2DEC",
+    "description": "The result is the decimal number for the octal number entered.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "OCT2HEX",
+    "description": "The result is the hexadecimal number for the octal number entered.",
+    "numberOfParams": [2]
+  }
+]

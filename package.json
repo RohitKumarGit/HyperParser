@@ -15,6 +15,7 @@
     "@codemirror/highlight": "^0.19.7",
     "@codemirror/lint": "^0.19.3",
     "@lezer/generator": "^0.15.3",
+    "@types/node": "^17.0.16",
     "codemirror": "^5.65.1"
   },
   "devDependencies": {

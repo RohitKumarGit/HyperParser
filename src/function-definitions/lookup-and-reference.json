@@ -1,0 +1,57 @@
+[
+  {
+    "functionName": "CHOOSE",
+    "description": "Uses an index to return a value from a list of up to 30 values.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "COLUMN",
+    "description": "Returns column number of a given reference or formula reference if argument not provided.",
+    "numberOfParams": [0, 1]
+  },
+  {
+    "functionName": "COLUMNS",
+    "description": "Returns the number of columns in the given reference.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "FORMULATEXT",
+    "description": "Returns a formula in a given cell as a string.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "HLOOKUP",
+    "description": "Searches horizontally with reference to adjacent cells to the bottom.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "INDEX",
+    "description": "Returns the content of a cell, specified by row and column number, or an optional range name.",
+    "numberOfParams": [4]
+  },
+  {
+    "functionName": "MATCH",
+    "description": "Returns the relative position of an item in an array that matches a specified value.",
+    "numberOfParams": [3]
+  },
+  {
+    "functionName": "OFFSET",
+    "description": "Returns the value of a cell offset by a certain number of rows and columns from a given reference point.",
+    "numberOfParams": [5]
+  },
+  {
+    "functionName": "ROW",
+    "description": "Returns row number of a given reference or formula reference if argument not provided.",
+    "numberOfParams": [0, 1]
+  },
+  {
+    "functionName": "ROWS",
+    "description": "Returns the number of rows in the given reference.",
+    "numberOfParams": [1]
+  },
+  {
+    "functionName": "VLOOKUP",
+    "description": "Searches vertically with reference to adjacent cells to the right.",
+    "numberOfParams": [4]
+  }
+]

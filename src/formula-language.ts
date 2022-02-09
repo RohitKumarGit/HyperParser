@@ -23,7 +23,7 @@ export const TokenConfig = {
 };
 export enum COMPLETION_TYPES {
   KEYWORD = "keyword",
-  TEXT = "text",
+  VARIABLE = "variable",
 }
 class AutoComplete {
   label: string;
