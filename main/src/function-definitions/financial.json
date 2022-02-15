@@ -1,0 +1,137 @@
+[
+    {
+        "functionName": "CUMIPMT",
+        "description": "Returns the cumulative interest paid on a loan between a start period and an end period.",
+        "numberOfParams": [6]
+    },
+    {
+        "functionName": "CUMPRINC",
+        "description": "Returns the cumulative principal paid on a loan between a start period and an end period.",
+        "numberOfParams": [6]
+    },
+    {
+        "functionName": "DB",
+        "description": "Returns the depreciation of an asset for a period using the fixed-declining balance method.",
+        "numberOfParams": [4, 5]
+    },
+    {
+        "functionName": "DDB",
+        "description": "Returns the depreciation of an asset for a period using the double-declining balance method.",
+        "numberOfParams": [4, 5]
+    },
+    {
+        "functionName": "DOLLARDE",
+        "description": "Converts a price entered with a special notation to a price displayed as a decimal number.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "DOLLARFR",
+        "description": "Converts a price displayed as a decimal number to a price entered with a special notation.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "EFFECT",
+        "description": "Calculates the effective annual interest rate from a nominal interest rate and the number of compounding periods per year.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "FV",
+        "description": "Returns the future value of an investment.",
+        "numberOfParams": [3, 4, 5]
+    },
+    {
+        "functionName": "FVSCHEDULE",
+        "description": "Returns the future value of an investment based on a rate schedule.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "IPMT",
+        "description": "Returns the interest portion of a given loan payment in a given payment period.",
+        "numberOfParams": [4, 5, 6]
+    },
+    {
+        "functionName": "ISPMT",
+        "description": "Returns the interest paid for a given period of an investment with equal principal payments.",
+        "numberOfParams": [4]
+    },
+    {
+        "functionName": "MIRR",
+        "description": "Returns modified internal value for cashflows.",
+        "numberOfParams": [3]
+    },
+    {
+        "functionName": "NOMINAL",
+        "description": "Returns the nominal interest rate.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "NPER",
+        "description": "Returns the number of periods for an investment assuming periodic, constant payments and a constant interest rate.",
+        "numberOfParams": [3, 4, 5]
+    },
+    {
+        "functionName": "NPV",
+        "description": "Returns net present value.",
+        "numberOfParams": [4]
+    },
+    {
+        "functionName": "PDURATION",
+        "description": "Returns number of periods to reach specific value.",
+        "numberOfParams": [3]
+    },
+    {
+        "functionName": "PMT",
+        "description": "Returns the periodic payment for a loan.",
+        "numberOfParams": [3, 4, 5]
+    },
+    {
+        "functionName": "PPMT",
+        "description": "Calculates the principal portion of a given loan payment.",
+        "numberOfParams": [4, 5, 6]
+    },
+    {
+        "functionName": "PV",
+        "description": "Returns the present value of an investment.",
+        "numberOfParams": [3, 4, 5]
+    },
+    {
+        "functionName": "RATE",
+        "description": "Returns the interest rate per period of an annuity.",
+        "numberOfParams": [3, 4, 5, 6]
+    },
+    {
+        "functionName": "RRI",
+        "description": "Returns an equivalent interest rate for the growth of an investment.",
+        "numberOfParams": [3]
+    },
+    {
+        "functionName": "SLN",
+        "description": "Returns the depreciation of an asset for one period, based on a straight-line method.",
+        "numberOfParams": [3]
+    },
+    {
+        "functionName": "SYD",
+        "description": "Returns the \"sum-of-years\" depreciation for an asset in a period.",
+        "numberOfParams": [4]
+    },
+    {
+        "functionName": "TBILLEQ",
+        "description": "Returns the bond-equivalent yield for a Treasury bill.",
+        "numberOfParams": [3]
+    },
+    {
+        "functionName": "TBILLPRICE",
+        "description": "Returns the price per $100 face value for a Treasury bill.",
+        "numberOfParams": [3]
+    },
+    {
+        "functionName": "TBILLYIELD",
+        "description": "Returns the yield for a Treasury bill.",
+        "numberOfParams": [3]
+    },
+    {
+        "functionName": "XNPV",
+        "description": "Returns net present value.",
+        "numberOfParams": [3]
+    }
+]

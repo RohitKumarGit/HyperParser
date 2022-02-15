@@ -8,9 +8,34 @@ import {
 import { CompletionContext, autocompletion } from "@codemirror/autocomplete";
 import { LanguageSupport, syntaxTree, LRLanguage } from "@codemirror/language";
 import { EditorView } from "@codemirror/view";
-import { closeLintPanel, Diagnostic, linter } from "@codemirror/lint";
+import { Diagnostic, linter } from "@codemirror/lint";
 import { basicSetup, EditorState } from "@codemirror/basic-setup";
-
+import dateAndTime from "./function-definitions/dateAndTime.json";
+import statistical from "./function-definitions/statistical.json";
+import array from "./function-definitions/array.json";
+import engineering from "./function-definitions/engineering.json";
+import financial from "./function-definitions/financial.json";
+import information from "./function-definitions/information.json";
+import logical from "./function-definitions/logical.json";
+import lookup from "./function-definitions/lookup-and-reference.json";
+import math from "./function-definitions/math-and-trigo.json";
+import matrix from "./function-definitions/matrix.json";
+import operator from "./function-definitions/operator.json";
+import text from "./function-definitions/text.json";
+export const functionDefinitions = [
+  dateAndTime,
+  statistical,
+  array,
+  engineering,
+  financial,
+  information,
+  logical,
+  lookup,
+  math,
+  matrix,
+  operator,
+  text,
+];
 export const TokenConfig = {
   Variable: t.variableName,
   ArtithMeticOperators: t.operator,
@@ -69,8 +94,7 @@ export class FormulaLanguage {
     console.log("-----");
     const diag: Diagnostic[] = [];
     syntaxTree(view.state).iterate({
-      enter: (type, from, to, get) => {
-        console.log(type, from, to);
+      enter: (type, from, to, _get) => {
         if (type.isError) {
           diag.push({
             from,
@@ -99,7 +123,7 @@ export class FormulaLanguage {
     const dummy1 = (c) => {
       return this.linterLogic(c);
     };
-    return new LanguageSupport(Language, [
+    const t = new LanguageSupport(Language, [
       highLightStyle,
       autocompletion({
         override: [dummy],
@@ -107,8 +131,11 @@ export class FormulaLanguage {
       }),
       linter(dummy1),
     ]);
+
+    return t;
   }
   displayEditor() {
+    console.log(1);
     this.editorView = new EditorView({
       state: EditorState.create({
         extensions: [basicSetup, this.getLanguage()],
@@ -118,6 +145,6 @@ export class FormulaLanguage {
     });
   }
   getValue() {
-    console.log(this.editorView.state.toJSON().doc);
+    console.log(this.editorView.state.toJSON().doc.split("\n"));
   }
 }

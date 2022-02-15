@@ -1,0 +1,77 @@
+[
+    {
+        "functionName": "HF.ADD",
+        "description": "Adds two values.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.CONCAT",
+        "description": "Concatenates two strings.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.DIVIDE",
+        "description": "Divides two values.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.EQ",
+        "description": "Tests two values for equality.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.LTE",
+        "description": "Tests two values for less-equal relation.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.LT",
+        "description": "Tests two values for less-than relation.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.GTE",
+        "description": "Tests two values for greater-equal relation.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.GT",
+        "description": "Tests two values for greater-than relation.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.MINUS",
+        "description": "Subtracts two values.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.MULTIPLY",
+        "description": "Multiplies two values.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.NE",
+        "description": "Tests two values for inequality.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.POW",
+        "description": "Computes power of two values.",
+        "numberOfParams": [2]
+    },
+    {
+        "functionName": "HF.UMINUS",
+        "description": "Negates the value.",
+        "numberOfParams": [1]
+    },
+    {
+        "functionName": "HF.UNARY_PERCENT",
+        "description": "Applies percent operator.",
+        "numberOfParams": [1]
+    },
+    {
+        "functionName": "HF.UPLUS",
+        "description": "Applies unary plus.",
+        "numberOfParams": [1]
+    }
+]

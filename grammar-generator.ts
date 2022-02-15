@@ -1,11 +1,11 @@
 const part1 = `@top Program {expression*}
 @detectDelim
-expression { Operation  |  String | tep}
-tep { Variable | Number | Functions}
-Unlimited {  expression ',' Unlimited | "" | expression }
-Operation {  Variable  Assign expression | tep ArtithMeticOperators tep | tep LogicalOperators tep  }`;
+expression { Operation  |  String | tep  | tep ',' expression  }
+tep { Variable | Number | Functions }
+Unlimited {  tep ',' Unlimited | "" | tep }
+Operation {  Variable  Assign expression | tep ArtithMeticOperators tep | tep LogicalOperators tep }`
 const part2 = `@tokens {\n`;
-const part3 = `Variable { ("{"std.asciiLetter+ "}" | "{$"std.asciiLetter+ "}" )}
+const part3 = `Variable { ("{" $[a-zA-Z_-]+ "}" | "{$" $[a-zA-Z_-]+ "}" )}
 Number {std.digit+} 
 String { '"' std.asciiLetter* '"'}
 Assign {"="}
@@ -13,7 +13,9 @@ ArtithMeticOperators {("+"|"*"|"-")}
 LogicalOperators {("&&" | "||")}
 "$"
  "(" ")" "[" "]" "{" "}"
-}`;
+ Newline {$[\n]+}
+}
+@skip {NewLine}`;
 let functionPattenrs = [];
 let functionTokens = [];
 const fs = require("fs");
