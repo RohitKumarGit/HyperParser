@@ -58,32 +58,33 @@ const formulaLanguage = new FormulaLanguage({
   style: [
     {
       tag: tags.variableName,
-      color: "red",
-      fontStyle: "italic",
+      color: "black",
+
+      background: "#ececec",
     },
     {
       tag: tags.operator,
-      color: "green",
+      color: "#2B95EF",
     },
     {
       tag: tags.logicOperator,
-      color: "blue",
+      color: "#2B95EF",
     },
     {
       tag: tags.keyword,
-      color: "cyan",
+      color: "#21df54",
     },
     {
       tag: tags.paren,
-      color: "teal",
+      color: "black",
     },
     {
       tag: tags.number,
-      color: "orange",
+      color: "#2B95EF",
     },
     {
       tag: tags.string,
-      color: "brown",
+      color: "black",
     },
   ],
 });

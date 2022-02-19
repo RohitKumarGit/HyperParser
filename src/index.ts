@@ -1,4 +1,6 @@
+import "./style.css";
 import { parser } from "./grammar";
+import fdetails from "./function-details/index.json";
 import {
   HighlightStyle,
   styleTags,
@@ -6,6 +8,8 @@ import {
   tags as t,
 } from "@codemirror/highlight";
 import { CompletionContext, autocompletion } from "@codemirror/autocomplete";
+import { Tooltip, showTooltip } from "@codemirror/tooltip";
+import { StateField } from "@codemirror/state";
 import { LanguageSupport, syntaxTree, LRLanguage } from "@codemirror/language";
 import { EditorView } from "@codemirror/view";
 import { Diagnostic, linter } from "@codemirror/lint";
@@ -65,7 +69,7 @@ export class TextStyle {
 export class FormulaLanguageConfig {
   styleTags = TokenConfig;
   functionNames: string[] = [];
-  style?: TextStyle[] = [];
+  style?: any[] = [];
   autoCompletionOptions: AutoComplete[];
   errorMessage: string;
   containerId: string;
@@ -81,7 +85,6 @@ export class FormulaLanguage {
     this.config = config;
   }
   autoCompletionLogic(context: CompletionContext) {
-    console.log(this.config);
     let word = context.matchBefore(/\w*/);
     if (word.from == word.to && !context.explicit) return null;
 
@@ -91,7 +94,6 @@ export class FormulaLanguage {
     };
   }
   linterLogic(view: EditorView) {
-    console.log("-----");
     const diag: Diagnostic[] = [];
     syntaxTree(view.state).iterate({
       enter: (type, from, to, _get) => {
@@ -108,8 +110,6 @@ export class FormulaLanguage {
     return diag;
   }
   getLanguage() {
-    console.log(this.config.styleTags);
-    console.log(this.config.style);
     const parserWithMetadata = parser.configure({
       props: [styleTags(this.config.styleTags)],
     });
@@ -120,6 +120,7 @@ export class FormulaLanguage {
     const dummy = (c) => {
       return this.autoCompletionLogic(c);
     };
+
     const dummy1 = (c) => {
       return this.linterLogic(c);
     };
@@ -128,23 +129,38 @@ export class FormulaLanguage {
       autocompletion({
         override: [dummy],
         activateOnTyping: true,
+        addToOptions: [
+          {
+            render: function (completion, state) {
+              let dom = document.createElement("div");
+              dom.className = "cm-details";
+              dom.innerHTML = fdetails[completion.label.toString().trim()]
+                ? `<b>${
+                    fdetails[completion.label.toString().trim()].signature
+                  }</b>`
+                : "";
+              return dom;
+            },
+            position: 100,
+          },
+        ],
       }),
       linter(dummy1),
     ]);
-
+    t;
     return t;
   }
   displayEditor() {
-    console.log(1);
     this.editorView = new EditorView({
       state: EditorState.create({
-        extensions: [basicSetup, this.getLanguage()],
+        extensions: [basicSetup, this.getLanguage(), EditorView.lineWrapping],
       }),
 
       parent: document.getElementById(this.config.containerId),
     });
+    this.editorView.lineWrapping;
   }
   getValue() {
-    console.log(this.editorView.state.toJSON().doc.split("\n"));
+    return this.editorView.state.toJSON().doc.split("\n");
   }
 }

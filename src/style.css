@@ -4,4 +4,82 @@
 body {
   padding: 10rem;
   display: flex;
+  font-family: "Inter", sans-serif;
+}
+.cm-scroller {
+  font-family: Inter !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(107, 107, 107, 1) !important;
+}
+.cm-line {
+  color: rgba(107, 107, 107, 1) !important;
+}
+.cm-scroller:focus-visible {
+  outline: none;
+}
+.cm-gutters {
+  display: none !important;
+}
+.ͼ2 .cm-activeLine {
+  background-color: white !important;
+}
+app {
+  white-space: pre-wrap;
+  border-bottom: 2px solid black;
+}
+.cm-editor {
+  border-bottom: 1px solid black !important;
+}
+.cm-completionLabel,
+.cm-completionDetail {
+  font-family: Inter !important;
+  font-size: 0.7rem;
+  color: #889398 !important;
+}
+
+.cm-tooltip-autocomplete ul li[aria-selected] {
+  background-color: #f2f2f2 !important;
+  color: #889398 !important;
+}
+.cm-tooltip.cm-tooltip-autocomplete > ul > li {
+  padding: 4px 7px !important;
+}
+.cm-completionIcon {
+  display: none !important;
+}
+.cm-completionLabel {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.cm-completionMatchedText {
+  text-decoration: none !important;
+}
+.cm-completionDetail {
+  display: block;
+  white-space: normal;
+  font-style: normal !important;
+  margin: 0 !important;
+}
+.cm-lintRange-error {
+  color: red;
+  background-image: none !important;
+}
+.cm-tooltip {
+  border: none !important;
+  max-width: 400px;
+  margin-top: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: white !important;
+  box-shadow: 0px 4px 6px rgba(87, 87, 87, 0.1);
+}
+.cm-details {
+  font-family: Inter;
+  font-size: 14px;
+  margin-top: 10px;
+}
+app * {
+  outline: none;
 }
