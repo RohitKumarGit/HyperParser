@@ -1,4 +1,3 @@
-import "./style.css";
 import { parser } from "./grammar";
 import fdetails from "./function-details/index.json";
 import {
@@ -8,8 +7,6 @@ import {
   tags as t,
 } from "@codemirror/highlight";
 import { CompletionContext, autocompletion } from "@codemirror/autocomplete";
-import { Tooltip, showTooltip } from "@codemirror/tooltip";
-import { StateField } from "@codemirror/state";
 import { LanguageSupport, syntaxTree, LRLanguage } from "@codemirror/language";
 import { EditorView } from "@codemirror/view";
 import { Diagnostic, linter } from "@codemirror/lint";
@@ -40,6 +37,7 @@ export const functionDefinitions = [
   operator,
   text,
 ];
+
 export const TokenConfig = {
   Variable: t.variableName,
   ArtithMeticOperators: t.operator,
@@ -71,8 +69,10 @@ export class FormulaLanguageConfig {
   functionNames: string[] = [];
   style?: any[] = [];
   autoCompletionOptions: AutoComplete[];
+  variablesCompletions?: AutoComplete[] = [];
   errorMessage: string;
   containerId: string;
+  lintingDelay? = 100;
 }
 export class FormulaLanguage {
   config: FormulaLanguageConfig;
@@ -81,13 +81,36 @@ export class FormulaLanguage {
     config.functionNames.forEach((functioName) => {
       TokenConfig[functioName] = t.keyword;
     });
+
     config.style = config.style ? config.style : [];
     this.config = config;
+    this.config.variablesCompletions = this.config.autoCompletionOptions.filter(
+      (t) => t.type === COMPLETION_TYPES.VARIABLE
+    );
   }
   autoCompletionLogic(context: CompletionContext) {
-    let word = context.matchBefore(/\w*/);
-    if (word.from == word.to && !context.explicit) return null;
+    let word = context.matchBefore(/[\w,@[a-zA-Z_-]*]*/);
+    if (word.from == word.to && word.text.charAt(word.from) === "@") {
+      return {
+        from: word.from,
+        options: this.config.variablesCompletions,
+        filter: false,
+      };
+    }
 
+    if (word.text.startsWith("@")) {
+      return {
+        from: word.from,
+        options: this.config.variablesCompletions.filter(
+          (variable) =>
+            variable.label
+
+              .toLowerCase()
+              .indexOf(word.text.substring(word.from + 1, word.to)) !== -1
+        ),
+        filter: false,
+      };
+    }
     return {
       from: word.from,
       options: this.config.autoCompletionOptions,
@@ -95,6 +118,7 @@ export class FormulaLanguage {
   }
   linterLogic(view: EditorView) {
     const diag: Diagnostic[] = [];
+
     syntaxTree(view.state).iterate({
       enter: (type, from, to, _get) => {
         if (type.isError) {
@@ -129,9 +153,10 @@ export class FormulaLanguage {
       autocompletion({
         override: [dummy],
         activateOnTyping: true,
+
         addToOptions: [
           {
-            render: function (completion, state) {
+            render: function (completion, _state) {
               let dom = document.createElement("div");
               dom.className = "cm-details";
               dom.innerHTML = fdetails[completion.label.toString().trim()]
@@ -141,11 +166,11 @@ export class FormulaLanguage {
                 : "";
               return dom;
             },
-            position: 100,
+            position: this.config.lintingDelay,
           },
         ],
       }),
-      linter(dummy1),
+      linter(dummy1, { delay: 1000 }),
     ]);
     t;
     return t;
@@ -158,9 +183,15 @@ export class FormulaLanguage {
 
       parent: document.getElementById(this.config.containerId),
     });
-    this.editorView.lineWrapping;
+    this.editorView.state.update({
+      changes: {
+        from: 0,
+        to: this.editorView.state.doc.length,
+        insert: "heuu",
+      },
+    });
   }
   getValue() {
-    return this.editorView.state.toJSON().doc.split("\n");
+    return this.editorView.state.toJSON().doc;
   }
 }

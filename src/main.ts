@@ -43,7 +43,7 @@ variableNames.forEach((t) => {
   autoCompletionOptions.push({
     label: t,
     type: COMPLETION_TYPES.VARIABLE,
-
+    info: "test",
     apply: `{${t}}`,
   });
 });
@@ -84,12 +84,10 @@ const formulaLanguage = new FormulaLanguage({
     },
     {
       tag: tags.string,
-      color: "black",
+      color: "blue",
     },
   ],
+  lintingDelay: 100,
 });
 formulaLanguage.displayEditor();
 // add event lister to button to display the editor
-document.getElementById("display-editor").addEventListener("click", () => {
-  formulaLanguage.getValue();
-});

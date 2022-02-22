@@ -4,7 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FormulaLanguage = exports.FormulaLanguageConfig = exports.TextStyle = exports.COMPLETION_TYPES = exports.TokenConfig = exports.functionDefinitions = void 0;
+require("./style.css");
 var grammar_1 = require("./grammar");
+var index_json_1 = __importDefault(require("./function-details/index.json"));
 var highlight_1 = require("@codemirror/highlight");
 var autocomplete_1 = require("@codemirror/autocomplete");
 var language_1 = require("@codemirror/language");
@@ -178,7 +180,6 @@ var FormulaLanguage = /** @class */ (function () {
         configurable: true,
         writable: true,
         value: function (context) {
-            console.log(this.config);
             var word = context.matchBefore(/\w*/);
             if (word.from == word.to && !context.explicit)
                 return null;
@@ -194,7 +195,6 @@ var FormulaLanguage = /** @class */ (function () {
         writable: true,
         value: function (view) {
             var _this = this;
-            console.log("-----");
             var diag = [];
             (0, language_1.syntaxTree)(view.state).iterate({
                 enter: function (type, from, to, _get) {
@@ -217,8 +217,6 @@ var FormulaLanguage = /** @class */ (function () {
         writable: true,
         value: function () {
             var _this = this;
-            console.log(this.config.styleTags);
-            console.log(this.config.style);
             var parserWithMetadata = grammar_1.parser.configure({
                 props: [(0, highlight_1.styleTags)(this.config.styleTags)],
             });
@@ -237,9 +235,23 @@ var FormulaLanguage = /** @class */ (function () {
                 (0, autocomplete_1.autocompletion)({
                     override: [dummy],
                     activateOnTyping: true,
+                    addToOptions: [
+                        {
+                            render: function (completion, _state) {
+                                var dom = document.createElement("div");
+                                dom.className = "cm-details";
+                                dom.innerHTML = index_json_1.default[completion.label.toString().trim()]
+                                    ? "<b>".concat(index_json_1.default[completion.label.toString().trim()].signature, "</b>")
+                                    : "";
+                                return dom;
+                            },
+                            position: 100,
+                        },
+                    ],
                 }),
                 (0, lint_1.linter)(dummy1),
             ]);
+            t;
             return t;
         }
     });
@@ -248,13 +260,13 @@ var FormulaLanguage = /** @class */ (function () {
         configurable: true,
         writable: true,
         value: function () {
-            console.log(1);
             this.editorView = new view_1.EditorView({
                 state: basic_setup_1.EditorState.create({
-                    extensions: [basic_setup_1.basicSetup, this.getLanguage()],
+                    extensions: [basic_setup_1.basicSetup, this.getLanguage(), view_1.EditorView.lineWrapping],
                 }),
                 parent: document.getElementById(this.config.containerId),
             });
+            this.editorView.lineWrapping;
         }
     });
     Object.defineProperty(FormulaLanguage.prototype, "getValue", {
@@ -262,7 +274,7 @@ var FormulaLanguage = /** @class */ (function () {
         configurable: true,
         writable: true,
         value: function () {
-            console.log(this.editorView.state.toJSON().doc.split("\n"));
+            return this.editorView.state.toJSON().doc;
         }
     });
     return FormulaLanguage;

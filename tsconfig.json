@@ -15,6 +15,6 @@
     "noImplicitReturns": true,
     "outDir": "./main"
   },
-  "exclude": ["src/grammar.ts"],
+  "exclude": ["src/grammar.ts", "src/main.ts"],
   "include": ["index.ts", "src/**/*.ts"]
 }
