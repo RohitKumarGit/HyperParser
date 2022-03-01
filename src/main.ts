@@ -12,6 +12,7 @@ import math from "./function-definitions/math-and-trigo.json";
 import matrix from "./function-definitions/matrix.json";
 import operator from "./function-definitions/operator.json";
 import text from "./function-definitions/text.json";
+import custom from "./function-definitions/custom-functions.json";
 const funtions = [
   dateAndTime,
   statistical,
@@ -25,6 +26,7 @@ const funtions = [
   matrix,
   operator,
   text,
+  custom,
 ];
 const autoCompletionOptions = [];
 const functionNames: string[] = [];

@@ -23,6 +23,7 @@ import math from "./function-definitions/math-and-trigo.json";
 import matrix from "./function-definitions/matrix.json";
 import operator from "./function-definitions/operator.json";
 import text from "./function-definitions/text.json";
+import custom from "./function-definitions/custom-functions.json";
 export const functionDefinitions = [
   dateAndTime,
   statistical,
@@ -36,6 +37,7 @@ export const functionDefinitions = [
   matrix,
   operator,
   text,
+  custom,
 ];
 
 export const TokenConfig = {
@@ -89,6 +91,7 @@ export class FormulaLanguage {
     );
   }
   autoCompletionLogic(context: CompletionContext) {
+    this.editorView.dispatch();
     let word = context.matchBefore(/[\w,@[a-zA-Z_-]*]*/);
     if (word.from == word.to && word.text.charAt(word.from) === "@") {
       return {
@@ -122,6 +125,7 @@ export class FormulaLanguage {
     syntaxTree(view.state).iterate({
       enter: (type, from, to, _get) => {
         if (type.isError) {
+          console.log(from, to);
           diag.push({
             from,
             to,
@@ -166,13 +170,14 @@ export class FormulaLanguage {
                 : "";
               return dom;
             },
-            position: this.config.lintingDelay,
+            position: 1000,
           },
         ],
       }),
-      linter(dummy1, { delay: 1000 }),
+      linter(dummy1, { delay: this.config.lintingDelay }),
     ]);
     t;
+
     return t;
   }
   displayEditor() {

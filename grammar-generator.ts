@@ -1,9 +1,10 @@
 const part1 = `@top Program {expression*}
 @detectDelim
-expression { Operation  |  String | tep  | tep ',' expression  }
-tep { Variable | Number | Functions }
+expression { Condition | tep    }
+Operators {Assign| ArtithMeticOperators | LogicalOperators}
+tep { Variable | Number | Functions | String }
 Unlimited {  tep ',' Unlimited | "" | tep }
-Operation {  Variable  Assign expression | tep ArtithMeticOperators tep | tep LogicalOperators tep }`
+Condition { tep Operators tep}`;
 const part2 = `@tokens {\n`;
 const part3 = `Variable { ("{" $[a-zA-Z_-]+ "}" | "{$" $[a-zA-Z_-]+ "}" )}
 Number {std.digit+} 
@@ -39,25 +40,24 @@ const readFilesFromADirecttory = function (directoryName) {
   files.map((file) => {
     const json: Def[] = getJSON(file, directoryName);
     json.forEach((def) => {
-
       const functionName = def.functionName;
       console.log(functionName);
       let token = functionName;
       if (token.trim().includes(".")) {
-          token = token.split(".").join("ZZ");
+        token = token.split(".").join("ZZ");
       }
       def.numberOfParams.forEach((count) => {
-        if(count === -1){
+        if (count === -1) {
           functionPattenrs.push(`${token} "(" Unlimited ")"`);
-          return
+          return;
         }
-        
+
         console.log(functionName, count);
         let t = [];
         for (let i = 0; i < count; i++) {
           t.push("tep");
         }
-        
+
         functionPattenrs.push(`${token} "(" ${t.join("','")} ")"`);
       });
 

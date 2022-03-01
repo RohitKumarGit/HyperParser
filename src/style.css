@@ -60,9 +60,11 @@ app {
   font-style: normal !important;
   margin: 0 !important;
 }
+.cm-lintRange-error > * {
+  color: red !important;
+}
 .cm-lintRange-error {
-  color: red;
-  background-image: none !important;
+  background: none !important;
 }
 .cm-tooltip {
   border: none !important;

@@ -1,0 +1,7 @@
+[
+  {
+    "functionName": "SpellNumber",
+    "description": "Converts number to words",
+    "numberOfParams": [1]
+  }
+]

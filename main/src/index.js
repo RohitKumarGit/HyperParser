@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FormulaLanguage = exports.FormulaLanguageConfig = exports.TextStyle = exports.COMPLETION_TYPES = exports.TokenConfig = exports.functionDefinitions = void 0;
-require("./style.css");
 var grammar_1 = require("./grammar");
 var index_json_1 = __importDefault(require("./function-details/index.json"));
 var highlight_1 = require("@codemirror/highlight");
@@ -139,6 +138,12 @@ var FormulaLanguageConfig = /** @class */ (function () {
             writable: true,
             value: void 0
         });
+        Object.defineProperty(this, "variablesCompletions", {
+            enumerable: true,
+            configurable: true,
+            writable: true,
+            value: []
+        });
         Object.defineProperty(this, "errorMessage", {
             enumerable: true,
             configurable: true,
@@ -150,6 +155,12 @@ var FormulaLanguageConfig = /** @class */ (function () {
             configurable: true,
             writable: true,
             value: void 0
+        });
+        Object.defineProperty(this, "lintingDelay", {
+            enumerable: true,
+            configurable: true,
+            writable: true,
+            value: 100
         });
     }
     return FormulaLanguageConfig;
@@ -174,15 +185,32 @@ var FormulaLanguage = /** @class */ (function () {
         });
         config.style = config.style ? config.style : [];
         this.config = config;
+        this.config.variablesCompletions = this.config.autoCompletionOptions.filter(function (t) { return t.type === COMPLETION_TYPES.VARIABLE; });
     }
     Object.defineProperty(FormulaLanguage.prototype, "autoCompletionLogic", {
         enumerable: false,
         configurable: true,
         writable: true,
         value: function (context) {
-            var word = context.matchBefore(/\w*/);
-            if (word.from == word.to && !context.explicit)
-                return null;
+            var word = context.matchBefore(/[\w,@[a-zA-Z_-]*]*/);
+            if (word.from == word.to && word.text.charAt(word.from) === "@") {
+                return {
+                    from: word.from,
+                    options: this.config.variablesCompletions,
+                    filter: false,
+                };
+            }
+            if (word.text.startsWith("@")) {
+                return {
+                    from: word.from,
+                    options: this.config.variablesCompletions.filter(function (variable) {
+                        return variable.label
+                            .toLowerCase()
+                            .indexOf(word.text.substring(word.from + 1, word.to)) !== -1;
+                    }),
+                    filter: false,
+                };
+            }
             return {
                 from: word.from,
                 options: this.config.autoCompletionOptions,
@@ -245,11 +273,11 @@ var FormulaLanguage = /** @class */ (function () {
                                     : "";
                                 return dom;
                             },
-                            position: 100,
+                            position: 1000,
                         },
                     ],
                 }),
-                (0, lint_1.linter)(dummy1),
+                (0, lint_1.linter)(dummy1, { delay: this.config.lintingDelay }),
             ]);
             t;
             return t;
@@ -266,7 +294,13 @@ var FormulaLanguage = /** @class */ (function () {
                 }),
                 parent: document.getElementById(this.config.containerId),
             });
-            this.editorView.lineWrapping;
+            this.editorView.state.update({
+                changes: {
+                    from: 0,
+                    to: this.editorView.state.doc.length,
+                    insert: "heuu",
+                },
+            });
         }
     });
     Object.defineProperty(FormulaLanguage.prototype, "getValue", {

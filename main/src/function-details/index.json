@@ -1,5 +1,1937 @@
 {
+    "ARRAYFORMULA": {
+        "functionName": "ARRAYFORMULA",
+        "signature": "ARRAYFORMULA(Formula)",
+        "description": "Enables array arithmetic inside."
+    },
+    "FILTER": {
+        "functionName": "FILTER",
+        "signature": "FILTER(Array; BoolArray1[; BoolArray2[; ...]])",
+        "description": "Filters the array based on boolean arrays."
+    },
+    "ARRAY_CONSTRAIN": {
+        "functionName": "ARRAY_CONSTRAIN",
+        "signature": "ARRAY_CONSTRAIN(Array; Height; Width)",
+        "description": "Truncates the array to given dimensions."
+    },
+    "DATE": {
+        "functionName": "DATE",
+        "signature": "DATE(Year; Month; Day)",
+        "description": "Calculates a date specified by year, month, day, and displays it in the cell's formatting."
+    },
+    "DATEDIF": {
+        "functionName": "DATEDIF",
+        "signature": "DATEDIF(Date1; Date2; Units)",
+        "description": "Calculates distance between two dates, in provided unit parameter."
+    },
+    "DATEVALUE": {
+        "functionName": "DATEVALUE",
+        "signature": "DATEVALUE(Datestring)",
+        "description": "Interprets string as date."
+    },
+    "DAY": {
+        "functionName": "DAY",
+        "signature": "DAY(Number)",
+        "description": "Returns the day of the given date value."
+    },
+    "DAYS": {
+        "functionName": "DAYS",
+        "signature": "DAYS(Date2; Date1)",
+        "description": "Calculates the difference between two date values."
+    },
+    "DAYS360": {
+        "functionName": "DAYS360",
+        "signature": "DAYS360(Date2; Date1[; Format])",
+        "description": "Calculates the difference between two date values in days, in 360-day basis."
+    },
+    "EDATE": {
+        "functionName": "EDATE",
+        "signature": "EDATE(Startdate; Months)",
+        "description": "Shifts the given startdate by given number of months."
+    },
+    "EOMONTH": {
+        "functionName": "EOMONTH",
+        "signature": "EOMONTH(Startdate; Months)",
+        "description": "Returns the date of the last day of a month which falls months away from the start date."
+    },
+    "HOUR": {
+        "functionName": "HOUR",
+        "signature": "HOUR(Time)",
+        "description": "Returns hour component of given time."
+    },
+    "INTERVAL": {
+        "functionName": "INTERVAL",
+        "signature": "INTERVAL(Seconds)",
+        "description": "Returns interval string from given number of seconds."
+    },
+    "ISOWEEKNUM": {
+        "functionName": "ISOWEEKNUM",
+        "signature": "ISOWEEKNUM(Date)",
+        "description": "Returns an ISO week number that corresponds to the week of year."
+    },
+    "MINUTE": {
+        "functionName": "MINUTE",
+        "signature": "MINUTE(Time)",
+        "description": "Returns minute component of given time."
+    },
+    "MONTH": {
+        "functionName": "MONTH",
+        "signature": "MONTH(Number)",
+        "description": "Returns the month for the given date value."
+    },
+    "NETWORKDAYS": {
+        "functionName": "NETWORKDAYS",
+        "signature": "NETWORKDAYS(Date1; Date2[; Holidays])",
+        "description": "Returns the number of working days between two given dates."
+    },
+    "NETWORKDAYS.INTL": {
+        "functionName": "NETWORKDAYS.INTL",
+        "signature": "NETWORKDAYS.INTL(Date1; Date2[; Mode [; Holidays]])",
+        "description": "Returns the number of working days between two given dates."
+    },
+    "NOW": {
+        "functionName": "NOW",
+        "signature": "NOW()",
+        "description": "Returns current date + time."
+    },
+    "SECOND": {
+        "functionName": "SECOND",
+        "signature": "SECOND(Time)",
+        "description": "Returns second component of given time."
+    },
+    "TIME": {
+        "functionName": "TIME",
+        "signature": "TIME(Hour; Minute; Second)",
+        "description": "Calculates time from given hour, minute and second."
+    },
+    "TIMEVALUE": {
+        "functionName": "TIMEVALUE",
+        "signature": "TIMEVALUE(Timestring)",
+        "description": "Interprets string as time."
+    },
+    "TODAY": {
+        "functionName": "TODAY",
+        "signature": "TODAY()",
+        "description": "Returns current date."
+    },
+    "WEEKDAY": {
+        "functionName": "WEEKDAY",
+        "signature": "WEEKDAY(Date; Type)",
+        "description": "Computes a number between 1-7 representing the day of week."
+    },
+    "WEEKNUM": {
+        "functionName": "WEEKNUM",
+        "signature": "WEEKNUM(Date; Type)",
+        "description": "Returns a week number that corresponds to the week of year."
+    },
+    "WORKDAY": {
+        "functionName": "WORKDAY",
+        "signature": "WORKDAY(Date, Shift[; Holidays])",
+        "description": "Returns the working day number of days from start day."
+    },
+    "WORKDAY.INTL": {
+        "functionName": "WORKDAY.INTL",
+        "signature": "WORKDAY(Date, Shift[; Mode[; Holidays]])",
+        "description": "Returns the working day number of days from start day."
+    },
+    "YEAR": {
+        "functionName": "YEAR",
+        "signature": "YEAR(Number)",
+        "description": "Returns the year as a number according to the internal calculation rules."
+    },
+    "YEARFRAC": {
+        "functionName": "YEARFRAC",
+        "signature": "YEARFRAC(Date2; Date1[; Format])",
+        "description": "Computes the difference between two date values, in fraction of years."
+    },
+    "BIN2DEC": {
+        "functionName": "BIN2DEC",
+        "signature": "BIN2DEC(Number)",
+        "description": "The result is the decimal number for the binary number entered."
+    },
+    "BIN2HEX": {
+        "functionName": "BIN2HEX",
+        "signature": "BIN2HEX(Number; Places)",
+        "description": "The result is the hexadecimal number for the binary number entered."
+    },
+    "BIN2OCT": {
+        "functionName": "BIN2OCT",
+        "signature": "BIN2OCT(Number; Places)",
+        "description": "The result is the octal number for the binary number entered."
+    },
+    "BITAND": {
+        "functionName": "BITAND",
+        "signature": "BITAND(Number1; Number2)",
+        "description": "Returns a bitwise logical \"and\" of the parameters."
+    },
+    "BITLSHIFT": {
+        "functionName": "BITLSHIFT",
+        "signature": "BITLSHIFT(Number; Shift)",
+        "description": "Shifts a number left by n bits."
+    },
+    "BITOR": {
+        "functionName": "BITOR",
+        "signature": "BITOR(Number1; Number2)",
+        "description": "Returns a bitwise logical \"or\" of the parameters."
+    },
+    "BITRSHIFT": {
+        "functionName": "BITRSHIFT",
+        "signature": "BITRSHIFT(Number; Shift)",
+        "description": "Shifts a number right by n bits."
+    },
+    "BITXOR": {
+        "functionName": "BITXOR",
+        "signature": "BITXOR(Number1; Number2)",
+        "description": "Returns a bitwise logical \"exclusive or\" of the parameters."
+    },
+    "COMPLEX": {
+        "functionName": "COMPLEX",
+        "signature": "COMPLEX(Re; Im[; Symbol])",
+        "description": "Returns complex number from Re and Im parts."
+    },
+    "DEC2BIN": {
+        "functionName": "DEC2BIN",
+        "signature": "DEC2BIN(Number; Places)",
+        "description": "Returns the binary number for the decimal number entered between –512 and 511."
+    },
+    "DEC2HEX": {
+        "functionName": "DEC2HEX",
+        "signature": "DEC2HEX(Number; Places)",
+        "description": "Returns the hexadecimal number for the decimal number entered."
+    },
+    "DEC2OCT": {
+        "functionName": "DEC2OCT",
+        "signature": "DEC2OCT(Number; Places)",
+        "description": "Returns the octal number for the decimal number entered."
+    },
+    "DELTA": {
+        "functionName": "DELTA",
+        "signature": "DELTA(Number_1; Number_2)",
+        "description": "Returns TRUE (1) if both numbers are equal, otherwise returns FALSE (0)."
+    },
+    "ERF": {
+        "functionName": "ERF",
+        "signature": "ERF(Lower_Limit; Upper_Limit)",
+        "description": "Returns values of the Gaussian error integral."
+    },
+    "ERFC": {
+        "functionName": "ERFC",
+        "signature": "ERFC(Lower_Limit)",
+        "description": "Returns complementary values of the Gaussian error integral between x and infinity."
+    },
+    "HEX2BIN": {
+        "functionName": "HEX2BIN",
+        "signature": "HEX2BIN(Number; Places)",
+        "description": "The result is the binary number for the hexadecimal number entered."
+    },
+    "HEX2DEC": {
+        "functionName": "HEX2DEC",
+        "signature": "HEX2DEC(Number)",
+        "description": "The result is the decimal number for the hexadecimal number entered."
+    },
+    "HEX2OCT": {
+        "functionName": "HEX2OCT",
+        "signature": "HEX2OCT(Number; Places)",
+        "description": "The result is the octal number for the hexadecimal number entered."
+    },
+    "IMABS": {
+        "functionName": "IMABS",
+        "signature": "IMABS(Complex)",
+        "description": "Returns module of a complex number."
+    },
+    "IMAGINARY": {
+        "functionName": "IMAGINARY",
+        "signature": "IMAGINARY(Complex)",
+        "description": "Returns imaginary part of a complex number."
+    },
+    "IMARGUMENT": {
+        "functionName": "IMARGUMENT",
+        "signature": "IMARGUMENT(Complex)",
+        "description": "Returns argument of a complex number."
+    },
+    "IMCONJUGATE": {
+        "functionName": "IMCONJUGATE",
+        "signature": "IMCONJUGATE(Complex)",
+        "description": "Returns conjugate of a complex number."
+    },
+    "IMCOS": {
+        "functionName": "IMCOS",
+        "signature": "IMCOS(Complex)",
+        "description": "Returns cosine of a complex number."
+    },
+    "IMCOSH": {
+        "functionName": "IMCOSH",
+        "signature": "IMCOSH(Complex)",
+        "description": "Returns hyperbolic cosine of a complex number."
+    },
+    "IMCOT": {
+        "functionName": "IMCOT",
+        "signature": "IMCOT(Complex)",
+        "description": "Returns cotangens of a complex number."
+    },
+    "IMCSC": {
+        "functionName": "IMCSC",
+        "signature": "IMCSC(Complex)",
+        "description": "Returns cosecans of a complex number."
+    },
+    "IMCSCH": {
+        "functionName": "IMCSCH",
+        "signature": "IMCSCH(Complex)",
+        "description": "Returns hyperbolic cosecans of a complex number."
+    },
+    "IMDIV": {
+        "functionName": "IMDIV",
+        "signature": "IMDIV(Complex1; Complex2)",
+        "description": "Divides two complex numbers."
+    },
+    "IMEXP": {
+        "functionName": "IMEXP",
+        "signature": "IMEXP(Complex)",
+        "description": "Returns exponent of a complex number."
+    },
+    "IMLN": {
+        "functionName": "IMLN",
+        "signature": "IMLN(Complex)",
+        "description": "Returns natural logarithm of a complex number."
+    },
+    "IMLOG2": {
+        "functionName": "IMLOG2",
+        "signature": "IMLOG2(Complex)",
+        "description": "Returns binary logarithm of a complex number."
+    },
+    "IMLOG10": {
+        "functionName": "IMLOG10",
+        "signature": "IMLOG10(Complex)",
+        "description": "Returns base-10 logarithm of a complex number."
+    },
+    "IMPOWER": {
+        "functionName": "IMPOWER",
+        "signature": "IMPOWER(Complex; Number)",
+        "description": "Returns a complex number raised to a given power."
+    },
+    "IMPRODUCT": {
+        "functionName": "IMPRODUCT",
+        "signature": "IMPRODUCT(Complex1 ...Complex30)",
+        "description": "Multiplies complex numbers."
+    },
+    "IMREAL": {
+        "functionName": "IMREAL",
+        "signature": "IMREAL(Complex)",
+        "description": "Returns real part of a complex number."
+    },
+    "IMSEC": {
+        "functionName": "IMSEC",
+        "signature": "IMSEC(Complex)",
+        "description": "Returns the secant of a complex number."
+    },
+    "IMSECH": {
+        "functionName": "IMSECH",
+        "signature": "IMSECH(Complex)",
+        "description": "Returns the hyperbolic secant of a complex number."
+    },
+    "IMSIN": {
+        "functionName": "IMSIN",
+        "signature": "IMSIN(Complex)",
+        "description": "Returns sine of a complex number."
+    },
+    "IMSINH": {
+        "functionName": "IMSINH",
+        "signature": "IMSINH(Complex)",
+        "description": "Returns hyperbolic sine of a complex number."
+    },
+    "IMSQRT": {
+        "functionName": "IMSQRT",
+        "signature": "IMSQRT(Complex)",
+        "description": "Returns a square root of a complex number."
+    },
+    "IMSUB": {
+        "functionName": "IMSUB",
+        "signature": "IMSUB(Complex1; Complex2)",
+        "description": "Subtracts two complex numbers."
+    },
+    "IMSUM": {
+        "functionName": "IMSUM",
+        "signature": "IMSUM(Complex1 ...Complex30)",
+        "description": "Adds complex numbers."
+    },
+    "IMTAN": {
+        "functionName": "IMTAN",
+        "signature": "IMTAN(Complex)",
+        "description": "Returns the tangent of a complex number."
+    },
+    "OCT2BIN": {
+        "functionName": "OCT2BIN",
+        "signature": "OCT2BIN(Number; Places)",
+        "description": "The result is the binary number for the octal number entered."
+    },
+    "OCT2DEC": {
+        "functionName": "OCT2DEC",
+        "signature": "OCT2DEC(Number)",
+        "description": "The result is the decimal number for the octal number entered."
+    },
+    "OCT2HEX": {
+        "functionName": "OCT2HEX",
+        "signature": "OCT2HEX(Number; Places)",
+        "description": "The result is the hexadecimal number for the octal number entered."
+    },
+    "ISBINARY": {
+        "functionName": "ISBINARY",
+        "signature": "ISBINARY(Value)",
+        "description": "Returns TRUE if provided value is a valid binary number."
+    },
+    "ISBLANK": {
+        "functionName": "ISBLANK",
+        "signature": "ISBLANK(Value)",
+        "description": "Returns TRUE if the reference to a cell is blank."
+    },
+    "ISERR": {
+        "functionName": "ISERR",
+        "signature": "ISERR(Value)",
+        "description": "Returns TRUE if the value is error value except #N/A!."
+    },
+    "ISERROR": {
+        "functionName": "ISERROR",
+        "signature": "ISERROR(Value)",
+        "description": "Returns TRUE if the value is general error value."
+    },
+    "ISEVEN": {
+        "functionName": "ISEVEN",
+        "signature": "ISEVEN(Value)",
+        "description": "Returns TRUE if the value is an even integer, or FALSE if the value is odd."
+    },
+    "ISFORMULA": {
+        "functionName": "ISFORMULA",
+        "signature": "ISFORMULA(Value)",
+        "description": "Checks whether referenced cell is a formula."
+    },
+    "ISLOGICAL": {
+        "functionName": "ISLOGICAL",
+        "signature": "ISLOGICAL(Value)",
+        "description": "Tests for a logical value (TRUE or FALSE)."
+    },
+    "ISNA": {
+        "functionName": "ISNA",
+        "signature": "ISNA(Value)",
+        "description": "Returns TRUE if the value is #N/A! error."
+    },
+    "ISNONTEXT": {
+        "functionName": "ISNONTEXT",
+        "signature": "ISNONTEXT(Value)",
+        "description": "Tests if the cell contents are text or numbers, and returns FALSE if the contents are text."
+    },
+    "ISNUMBER": {
+        "functionName": "ISNUMBER",
+        "signature": "ISNUMBER(Value)",
+        "description": "Returns TRUE if the value refers to a number."
+    },
+    "ISODD": {
+        "functionName": "ISODD",
+        "signature": "ISODD(Value)",
+        "description": "Returns TRUE if the value is odd, or FALSE if the number is even."
+    },
+    "ISREF": {
+        "functionName": "ISREF",
+        "signature": "ISREF(Value)",
+        "description": "Returns TRUE if provided value is #REF! error."
+    },
+    "ISTEXT": {
+        "functionName": "ISTEXT",
+        "signature": "ISTEXT(Value)",
+        "description": "Returns TRUE if the cell contents refer to text."
+    },
+    "SHEET": {
+        "functionName": "SHEET",
+        "signature": "SHEET([Value])",
+        "description": "Returns sheet number of a given value or a formula sheet number if no argument is provided."
+    },
+    "SHEETS": {
+        "functionName": "SHEETS",
+        "signature": "SHEETS([Value])",
+        "description": "Returns number of sheet of a given reference or number of all sheets in workbook when no argument is provided."
+    },
+    "NA": {
+        "functionName": "NA",
+        "signature": "NA(Value)",
+        "description": "Returns #N/A! error value."
+    },
+    "CUMIPMT": {
+        "functionName": "CUMIPMT",
+        "signature": "CUMIPMT(Rate; Nper; Pv; Start, End; type)",
+        "description": "Returns the cumulative interest paid on a loan between a start period and an end period."
+    },
+    "CUMPRINC": {
+        "functionName": "CUMPRINC",
+        "signature": "CUMPRINC(Rate; Nper; Pv; Start; End; Type)",
+        "description": "Returns the cumulative principal paid on a loan between a start period and an end period."
+    },
+    "DB": {
+        "functionName": "DB",
+        "signature": "DB(Cost; Salvage; Life; Period[; Month])",
+        "description": "Returns the depreciation of an asset for a period using the fixed-declining balance method."
+    },
+    "DDB": {
+        "functionName": "DDB",
+        "signature": "DDB(Cost, Salvage; Life; Period[; Factor])",
+        "description": "Returns the depreciation of an asset for a period using the double-declining balance method."
+    },
+    "DOLLARDE": {
+        "functionName": "DOLLARDE",
+        "signature": "DOLLARDE(Price, Fraction)",
+        "description": "Converts a price entered with a special notation to a price displayed as a decimal number."
+    },
+    "DOLLARFR": {
+        "functionName": "DOLLARFR",
+        "signature": "DOLLARFR(Price, Fraction)",
+        "description": "Converts a price displayed as a decimal number to a price entered with a special notation."
+    },
+    "EFFECT": {
+        "functionName": "EFFECT",
+        "signature": "EFFECT (Nominal_rate; Npery)",
+        "description": "Calculates the effective annual interest rate from a nominal interest rate and the number of compounding periods per year."
+    },
+    "FV": {
+        "functionName": "FV",
+        "signature": "FV(Rate; Nper; Pmt[; Pv;[ Type]])",
+        "description": "Returns the future value of an investment."
+    },
+    "FVSCHEDULE": {
+        "functionName": "FVSCHEDULE",
+        "signature": "FV(Pv; Schedule)",
+        "description": "Returns the future value of an investment based on a rate schedule."
+    },
+    "IPMT": {
+        "functionName": "IPMT",
+        "signature": "IPMT(Rate; Per; Nper; Pv[; Fv[; Type]])",
+        "description": "Returns the interest portion of a given loan payment in a given payment period."
+    },
+    "ISPMT": {
+        "functionName": "ISPMT",
+        "signature": "ISPMT(Rate; Per; Nper; Value)",
+        "description": "Returns the interest paid for a given period of an investment with equal principal payments."
+    },
+    "MIRR": {
+        "functionName": "MIRR",
+        "signature": "MIRR(Flows; FRate; RRate)",
+        "description": "Returns modified internal value for cashflows."
+    },
+    "NOMINAL": {
+        "functionName": "NOMINAL",
+        "signature": "NOMINAL(Effect_rate; Npery)",
+        "description": "Returns the nominal interest rate."
+    },
+    "NPER": {
+        "functionName": "NPER",
+        "signature": "NPER(Rate; Pmt; Pv[; Fv[; Type]])",
+        "description": "Returns the number of periods for an investment assuming periodic, constant payments and a constant interest rate."
+    },
+    "NPV": {
+        "functionName": "NPV",
+        "signature": "NPV(Rate; Value1; ...; Value30)",
+        "description": "Returns net present value."
+    },
+    "PDURATION": {
+        "functionName": "PDURATION",
+        "signature": "PDURATION(Rate; Pv; Fv)",
+        "description": "Returns number of periods to reach specific value."
+    },
+    "PMT": {
+        "functionName": "PMT",
+        "signature": "PMT(Rate; Nper; Pv[; Fv[; Type]])",
+        "description": "Returns the periodic payment for a loan."
+    },
+    "PPMT": {
+        "functionName": "PPMT",
+        "signature": "PPMT(Rate; Per; Nper; Pv[; Fv[; Type]])",
+        "description": "Calculates the principal portion of a given loan payment."
+    },
+    "PV": {
+        "functionName": "PV",
+        "signature": "PV(Rate; Nper; Pmt[; Fv[; Type]])",
+        "description": "Returns the present value of an investment."
+    },
+    "RATE": {
+        "functionName": "RATE",
+        "signature": "RATE(Nper; Pmt; Pv[; Fv[; Type[; guess]]])",
+        "description": "Returns the interest rate per period of an annuity."
+    },
+    "RRI": {
+        "functionName": "RRI",
+        "signature": "RRI(Nper; Pv; Fv)",
+        "description": "Returns an equivalent interest rate for the growth of an investment."
+    },
+    "SLN": {
+        "functionName": "SLN",
+        "signature": "SLN(Cost; Salvage; Life)",
+        "description": "Returns the depreciation of an asset for one period, based on a straight-line method."
+    },
+    "SYD": {
+        "functionName": "SYD",
+        "signature": "SYD(Cost; Salvage; Life; Period)",
+        "description": "Returns the \"sum-of-years\" depreciation for an asset in a period."
+    },
+    "TBILLEQ": {
+        "functionName": "TBILLEQ",
+        "signature": "TBILLEQ(Settlement; Maturity; Discount)",
+        "description": "Returns the bond-equivalent yield for a Treasury bill."
+    },
+    "TBILLPRICE": {
+        "functionName": "TBILLPRICE",
+        "signature": "TBILLPRICE(Settlement; Maturity; Discount)",
+        "description": "Returns the price per $100 face value for a Treasury bill."
+    },
+    "TBILLYIELD": {
+        "functionName": "TBILLYIELD",
+        "signature": "TBILLYIELD(Settlement; Maturity; Price)",
+        "description": "Returns the yield for a Treasury bill."
+    },
+    "XNPV": {
+        "functionName": "XNPV",
+        "signature": "XNPV(Rate; Payments; Dates)",
+        "description": "Returns net present value."
+    },
+    "AND": {
+        "functionName": "AND",
+        "signature": "AND(Logicalvalue1; Logicalvalue2 ...Logicalvalue30)",
+        "description": "Returns TRUE if all arguments are TRUE."
+    },
+    "FALSE": {
+        "functionName": "FALSE",
+        "signature": "FALSE()",
+        "description": "Returns the logical value FALSE."
+    },
     "IF": {
-        "signature": "IF()"
+        "functionName": "IF",
+        "signature": "IF(Test; Then value; Otherwisevalue)",
+        "description": "Specifies a logical test to be performed."
+    },
+    "IFNA": {
+        "functionName": "IFNA",
+        "signature": "IFNA(Value; Alternate_value)",
+        "description": "Returns the value if the cell does not contains the #N/A (value not available) error value, or the alternative value if it does."
+    },
+    "IFERROR": {
+        "functionName": "IFERROR",
+        "signature": "IFERROR(Value; Alternate_value)",
+        "description": "Returns the value if the cell does not contains an error value, or the alternative value if it does."
+    },
+    "NOT": {
+        "functionName": "NOT",
+        "signature": "NOT(Logicalvalue)",
+        "description": "Complements (inverts) a logical value."
+    },
+    "SWITCH": {
+        "functionName": "SWITCH",
+        "signature": "SWITCH(Expression1, Value1[, Expression2, Value2[..., Expression_n, Value_n]])",
+        "description": "Evaluates a list of arguments, consisting of an expression followed by a value."
+    },
+    "OR": {
+        "functionName": "OR",
+        "signature": "OR(Logicalvalue1; Logicalvalue2 ...Logicalvalue30)",
+        "description": "Returns TRUE if at least one argument is TRUE."
+    },
+    "TRUE": {
+        "functionName": "TRUE",
+        "signature": "TRUE()",
+        "description": "The logical value is set to TRUE."
+    },
+    "XOR": {
+        "functionName": "XOR",
+        "signature": "XOR(Logicalvalue1; Logicalvalue2 ...Logicalvalue30)",
+        "description": "Returns true if an odd number of arguments evaluates to TRUE."
+    },
+    "CHOOSE": {
+        "functionName": "CHOOSE",
+        "signature": "CHOOSE(Index; Value1; ...; Value30)",
+        "description": "Uses an index to return a value from a list of up to 30 values."
+    },
+    "COLUMN": {
+        "functionName": "COLUMN",
+        "signature": "COLUMNS([Reference])",
+        "description": "Returns column number of a given reference or formula reference if argument not provided."
+    },
+    "COLUMNS": {
+        "functionName": "COLUMNS",
+        "signature": "COLUMNS(Array)",
+        "description": "Returns the number of columns in the given reference."
+    },
+    "FORMULATEXT": {
+        "functionName": "FORMULATEXT",
+        "signature": "FORMULATEXT(Reference)",
+        "description": "Returns a formula in a given cell as a string."
+    },
+    "HLOOKUP": {
+        "functionName": "HLOOKUP",
+        "signature": "HLOOKUP(Search_Criterion; Array; Index; Sort_Order)",
+        "description": "Searches horizontally with reference to adjacent cells to the bottom."
+    },
+    "INDEX": {
+        "functionName": "INDEX",
+        "signature": "INDEX(Reference; Row; Column; Range)",
+        "description": "Returns the content of a cell, specified by row and column number, or an optional range name."
+    },
+    "MATCH": {
+        "functionName": "MATCH",
+        "signature": "MATCH(Searchcriterion; Lookuparray; Type)",
+        "description": "Returns the relative position of an item in an array that matches a specified value."
+    },
+    "OFFSET": {
+        "functionName": "OFFSET",
+        "signature": "OFFSET(Reference; Rows; Columns; Height; Width)",
+        "description": "Returns the value of a cell offset by a certain number of rows and columns from a given reference point."
+    },
+    "ROW": {
+        "functionName": "ROW",
+        "signature": "ROW([Reference])",
+        "description": "Returns row number of a given reference or formula reference if argument not provided."
+    },
+    "ROWS": {
+        "functionName": "ROWS",
+        "signature": "ROWS(Array)",
+        "description": "Returns the number of rows in the given reference."
+    },
+    "VLOOKUP": {
+        "functionName": "VLOOKUP",
+        "signature": "VLOOKUP(Search_Criterion; Array; Index; Sort_Order)",
+        "description": "Searches vertically with reference to adjacent cells to the right."
+    },
+    "ABS": {
+        "functionName": "ABS",
+        "signature": "ABS(Number)",
+        "description": "Returns the absolute value of a number."
+    },
+    "ACOS": {
+        "functionName": "ACOS",
+        "signature": "ACOS(Number)",
+        "description": "Returns the inverse trigonometric cosine of a number."
+    },
+    "ACOSH": {
+        "functionName": "ACOSH",
+        "signature": "ACOSH(Number)",
+        "description": "Returns the inverse hyperbolic cosine of a number."
+    },
+    "ACOT": {
+        "functionName": "ACOT",
+        "signature": "ACOT(Number)",
+        "description": "Returns the inverse trigonometric cotangent of a number."
+    },
+    "ACOTH": {
+        "functionName": "ACOTH",
+        "signature": "ACOTH(Number)",
+        "description": "Returns the inverse hyperbolic cotangent of a number."
+    },
+    "ARABIC": {
+        "functionName": "ARABIC",
+        "signature": "ARABIC(String)",
+        "description": "Converts number from roman form."
+    },
+    "ASIN": {
+        "functionName": "ASIN",
+        "signature": "ASIN(Number)",
+        "description": "Returns the inverse trigonometric sine of a number."
+    },
+    "ASINH": {
+        "functionName": "ASINH",
+        "signature": "ASINH(Number)",
+        "description": "Returns the inverse hyperbolic sine of a number."
+    },
+    "ATAN": {
+        "functionName": "ATAN",
+        "signature": "ATAN(Number)",
+        "description": "Returns the inverse trigonometric tangent of a number."
+    },
+    "ATAN2": {
+        "functionName": "ATAN2",
+        "signature": "ATAN2(Numberx; Numbery)",
+        "description": "Returns the inverse trigonometric tangent of the specified x and y coordinates."
+    },
+    "ATANH": {
+        "functionName": "ATANH",
+        "signature": "ATANH(Number)",
+        "description": "Returns the inverse hyperbolic tangent of a number."
+    },
+    "BASE": {
+        "functionName": "BASE",
+        "signature": "BASE(Number; Radix; [Minimumlength])",
+        "description": "Converts a positive integer to a specified base into a text from the numbering system."
+    },
+    "CEILING": {
+        "functionName": "CEILING",
+        "signature": "CEILING(Number; Significance)",
+        "description": "Rounds a number up to the nearest multiple of Significance."
+    },
+    "CEILING.MATH": {
+        "functionName": "CEILING.MATH",
+        "signature": "CEILING.MATH(Number[; Significance[; Mode]])",
+        "description": "Rounds a number up to the nearest multiple of Significance."
+    },
+    "CEILING.PRECISE": {
+        "functionName": "CEILING.PRECISE",
+        "signature": "CEILING.PRECISE(Number[; Significance])",
+        "description": "Rounds a number up to the nearest multiple of Significance."
+    },
+    "COMBIN": {
+        "functionName": "COMBIN",
+        "signature": "COMBIN(Number; Number)",
+        "description": "Returns number of combinations (without repetitions)."
+    },
+    "COMBINA": {
+        "functionName": "COMBINA",
+        "signature": "COMBINA(Number; Number)",
+        "description": "Returns number of combinations (with repetitions)."
+    },
+    "COS": {
+        "functionName": "COS",
+        "signature": "COS(Number)",
+        "description": "Returns the cosine of the given angle (in radians)."
+    },
+    "COSH": {
+        "functionName": "COSH",
+        "signature": "COSH(Number)",
+        "description": "Returns the hyperbolic cosine of the given value."
+    },
+    "COT": {
+        "functionName": "COT",
+        "signature": "COT(Number)",
+        "description": "Returns the cotangent of the given angle (in radians)."
+    },
+    "COTH": {
+        "functionName": "COTH",
+        "signature": "COTH(Number)",
+        "description": "Returns the hyperbolic cotangent of the given value."
+    },
+    "COUNTUNIQUE": {
+        "functionName": "COUNTUNIQUE",
+        "signature": "COUNTUNIQUE(Value1, [Value2, ...])",
+        "description": "Counts the number of unique values in a list of specified values and ranges."
+    },
+    "CSC": {
+        "functionName": "CSC",
+        "signature": "CSC(Number)",
+        "description": "Returns the cosecans of the given angle (in radians)."
+    },
+    "CSCH": {
+        "functionName": "CSCH",
+        "signature": "CSCH(Number)",
+        "description": "Returns the hyperbolic cosecant of the given value."
+    },
+    "DECIMAL": {
+        "functionName": "DECIMAL",
+        "signature": "DECIMAL(\"Text\"; Radix)",
+        "description": "Converts text with characters from a number system to a positive integer in the base radix given."
+    },
+    "DEGREES": {
+        "functionName": "DEGREES",
+        "signature": "DEGREES(Number)",
+        "description": "Converts radians into degrees."
+    },
+    "EVEN": {
+        "functionName": "EVEN",
+        "signature": "EVEN(Number)",
+        "description": "Rounds a positive number up to the next even integer and a negative number down to the next even integer."
+    },
+    "EXP": {
+        "functionName": "EXP",
+        "signature": "EXP(Number)",
+        "description": "Returns constant e raised to the power of a number."
+    },
+    "FACT": {
+        "functionName": "FACT",
+        "signature": "FACT(Number)",
+        "description": "Returns a factorial of a number."
+    },
+    "FACTDOUBLE": {
+        "functionName": "FACTDOUBLE",
+        "signature": "FACTDOUBLE(Number)",
+        "description": "Returns a double factorial of a number."
+    },
+    "FLOOR": {
+        "functionName": "FLOOR",
+        "signature": "FLOOR(Number; Significance)",
+        "description": "Rounds a number down to the nearest multiple of Significance."
+    },
+    "FLOOR.MATH": {
+        "functionName": "FLOOR.MATH",
+        "signature": "FLOOR.MATH(Number[; Significance[; Mode]])",
+        "description": "Rounds a number down to the nearest multiple of Significance."
+    },
+    "FLOOR.PRECISE": {
+        "functionName": "FLOOR.PRECISE",
+        "signature": "FLOOR.PRECISE(Number[; Significance])",
+        "description": "Rounds a number down to the nearest multiple of Significance."
+    },
+    "GCD": {
+        "functionName": "GCD",
+        "signature": "GCD(Number1; Number2; ...)",
+        "description": "Computes greatest common divisor of numbers."
+    },
+    "INT": {
+        "functionName": "INT",
+        "signature": "INT(Number)",
+        "description": "Rounds a number down to the nearest integer."
+    },
+    "ISO.CEILING": {
+        "functionName": "ISO.CEILING",
+        "signature": "ISO.CEILING(Number[; Significance])",
+        "description": "Rounds a number up to the nearest multiple of Significance."
+    },
+    "LCM": {
+        "functionName": "LCM",
+        "signature": "LCM(Number1; Number2; ...)",
+        "description": "Computes least common multiplicity of numbers."
+    },
+    "LN": {
+        "functionName": "LN",
+        "signature": "LN(Number)",
+        "description": "Returns the natural logarithm based on the constant e of a number."
+    },
+    "LOG": {
+        "functionName": "LOG",
+        "signature": "LOG(Number; Base)",
+        "description": "Returns the logarithm of a number to the specified base."
+    },
+    "LOG10": {
+        "functionName": "LOG10",
+        "signature": "LOG10(Number)",
+        "description": "Returns the base-10 logarithm of a number."
+    },
+    "MOD": {
+        "functionName": "MOD",
+        "signature": "MOD(Dividend; Divisor)",
+        "description": "Returns the remainder when one integer is divided by another."
+    },
+    "MROUND": {
+        "functionName": "MROUND",
+        "signature": "MROUND(Number; Base)",
+        "description": "Rounds number to the neares multiplicity."
+    },
+    "MULTINOMIAL": {
+        "functionName": "MULTINOMIAL",
+        "signature": "MULTINOMIAL(Number1; Number2; ...)",
+        "description": "Returns number of multiset combinations."
+    },
+    "ODD": {
+        "functionName": "ODD",
+        "signature": "ODD(Number)",
+        "description": "Rounds a positive number up to the nearest odd integer and a negative number down to the nearest odd integer."
+    },
+    "PI": {
+        "functionName": "PI",
+        "signature": "PI()",
+        "description": "Returns 3.14159265358979, the value of the mathematical constant PI to 14 decimal places."
+    },
+    "POWER": {
+        "functionName": "POWER",
+        "signature": "POWER(Base; Exponent)",
+        "description": "Returns a number raised to another number."
+    },
+    "PRODUCT": {
+        "functionName": "PRODUCT",
+        "signature": "PRODUCT(Number1; Number2; ...; Number30)",
+        "description": "Returns product of numbers."
+    },
+    "QUOTIENT": {
+        "functionName": "QUOTIENT",
+        "signature": "QUOTIENT(Dividend; Divisor)",
+        "description": "Returns integer part of a division."
+    },
+    "RADIANS": {
+        "functionName": "RADIANS",
+        "signature": "RADIANS(Number)",
+        "description": "Converts degrees to radians."
+    },
+    "RAND": {
+        "functionName": "RAND",
+        "signature": "RAND()",
+        "description": "Returns a random number between 0 and 1."
+    },
+    "RANDBETWEEN": {
+        "functionName": "RANDBETWEEN",
+        "signature": "RAND(Lowerbound; Upperbound)",
+        "description": "Returns a random integer between two numbers."
+    },
+    "ROMAN": {
+        "functionName": "ROMAN",
+        "signature": "ROMAN(Number[; Mode])",
+        "description": "Converts number to roman form."
+    },
+    "ROUND": {
+        "functionName": "ROUND",
+        "signature": "ROUND(Number; Count)",
+        "description": "Rounds a number to a certain number of decimal places."
+    },
+    "ROUNDDOWN": {
+        "functionName": "ROUNDDOWN",
+        "signature": "ROUNDDOWN(Number; Count)",
+        "description": "Rounds a number down, toward zero, to a certain precision."
+    },
+    "ROUNDUP": {
+        "functionName": "ROUNDUP",
+        "signature": "ROUNDUP(Number; Count)",
+        "description": "Rounds a number up, away from zero, to a certain precision."
+    },
+    "SEC": {
+        "functionName": "SEC",
+        "signature": "SEC(Number)",
+        "description": "Returns the secant of the given angle (in radians)."
+    },
+    "SECH": {
+        "functionName": "SECH",
+        "signature": "SEC(Number)",
+        "description": "Returns the hyperbolic secant of the given angle (in radians)."
+    },
+    "SERIESSUM": {
+        "functionName": "SERIESSUM",
+        "signature": "SERIESSUM(Number; Number; Number; Coefficients)",
+        "description": "Evaluates series at a point."
+    },
+    "SIN": {
+        "functionName": "SIN",
+        "signature": "SIN(Number)",
+        "description": "Returns the sine of the given angle (in radians)."
+    },
+    "SINH": {
+        "functionName": "SINH",
+        "signature": "SINH(Number)",
+        "description": "Returns the hyperbolic sine of the given value."
+    },
+    "SIGN": {
+        "functionName": "SIGN",
+        "signature": "SIGN(Number)",
+        "description": "Returns sign of a number."
+    },
+    "SQRT": {
+        "functionName": "SQRT",
+        "signature": "SQRT(Number)",
+        "description": "Returns the positive square root of a number."
+    },
+    "SQRTPI": {
+        "functionName": "SQRTPI",
+        "signature": "SQRTPI(Number)",
+        "description": "Returns sqrt of number times pi."
+    },
+    "SUBTOTAL": {
+        "functionName": "SUBTOTAL",
+        "signature": "SUBTOTAL(Function; Number1; Number2; ... Number30)",
+        "description": "Computes aggregation using function specified by number."
+    },
+    "SUM": {
+        "functionName": "SUM",
+        "signature": "SUM(Number1; Number2; ...; Number30)",
+        "description": "Adds all the numbers in a range of cells."
+    },
+    "SUMIF": {
+        "functionName": "SUMIF",
+        "signature": "SUMIF(Range; Criteria; Sumrange)",
+        "description": "Adds the cells specified by given criteria."
+    },
+    "SUMIFS": {
+        "functionName": "SUMIFS",
+        "signature": "SUMIFS(Sum_Range ; Criterion_range1 ; Criterion1 [ ; Criterion_range2 ; Criterion2 [;...]])",
+        "description": "Returns the sum of the values of cells in a range that meets multiple criteria in multiple ranges."
+    },
+    "SUMPRODUCT": {
+        "functionName": "SUMPRODUCT",
+        "signature": "SUMPRODUCT(Array1; Array2...Array30)",
+        "description": "Multiplies corresponding elements in the given arrays, and returns the sum of those products."
+    },
+    "SUMSQ": {
+        "functionName": "SUMSQ",
+        "signature": "SUMSQ(Number1; Number2; ...; Number30)",
+        "description": "Returns the sum of the squares of the arguments"
+    },
+    "SUMX2MY2": {
+        "functionName": "SUMX2MY2",
+        "signature": "SUMX2MY2(Range1; Range2)",
+        "description": "Returns the sum of the square differences."
+    },
+    "SUMX2PY2": {
+        "functionName": "SUMX2PY2",
+        "signature": "SUMX2PY2(Range1; Range2)",
+        "description": "Returns the sum of the square sums."
+    },
+    "SUMXMY2": {
+        "functionName": "SUMXMY2",
+        "signature": "SUMXMY2(Range1; Range2)",
+        "description": "Returns the sum of the square of differences."
+    },
+    "TAN": {
+        "functionName": "TAN",
+        "signature": "TAN(Number)",
+        "description": "Returns the tangent of the given angle (in radians)."
+    },
+    "TANH": {
+        "functionName": "TANH",
+        "signature": "TANH(Number)",
+        "description": "Returns the hyperbolic tangent of the given value."
+    },
+    "TRUNC": {
+        "functionName": "TRUNC",
+        "signature": "TRUNC(Number; Count)",
+        "description": "Truncates a number by removing decimal places."
+    },
+    "MMULT": {
+        "functionName": "MMULT",
+        "signature": "MMULT(Array; Array)",
+        "description": "Calculates the array product of two arrays."
+    },
+    "MEDIANPOOL": {
+        "functionName": "MEDIANPOOL",
+        "signature": "MEDIANPOOL(Range, Window_size, Stride)",
+        "description": "Calculates a smaller range which is a median of a Window_size, in a given Range, for every Stride element."
+    },
+    "MAXPOOL": {
+        "functionName": "MAXPOOL",
+        "signature": "MAXPOOL(Range, Window_size, Stride)",
+        "description": "Calculates a smaller range which is a maximum of a Window_size, in a given Range, for every Stride element."
+    },
+    "TRANSPOSE": {
+        "functionName": "TRANSPOSE",
+        "signature": "TRANSPOSE(Array)",
+        "description": "Transposes the rows and columns of an array."
+    },
+    "HF.ADD": {
+        "functionName": "HF.ADD",
+        "signature": "HF.ADD(Number; Number)",
+        "description": "Adds two values."
+    },
+    "HF.CONCAT": {
+        "functionName": "HF.CONCAT",
+        "signature": "HF.CONCAT(String; String)",
+        "description": "Concatenates two strings."
+    },
+    "HF.DIVIDE": {
+        "functionName": "HF.DIVIDE",
+        "signature": "HF.DIVIDE(Number; Number)",
+        "description": "Divides two values."
+    },
+    "HF.EQ": {
+        "functionName": "HF.EQ",
+        "signature": "HF.EQ(Value; Value)",
+        "description": "Tests two values for equality."
+    },
+    "HF.LTE": {
+        "functionName": "HF.LTE",
+        "signature": "HF.LEQ(Value; Value)",
+        "description": "Tests two values for less-equal relation."
+    },
+    "HF.LT": {
+        "functionName": "HF.LT",
+        "signature": "HF.LT(Value; Value)",
+        "description": "Tests two values for less-than relation."
+    },
+    "HF.GTE": {
+        "functionName": "HF.GTE",
+        "signature": "HF.GEQ(Value; Value)",
+        "description": "Tests two values for greater-equal relation."
+    },
+    "HF.GT": {
+        "functionName": "HF.GT",
+        "signature": "HF.GT(Value; Value)",
+        "description": "Tests two values for greater-than relation."
+    },
+    "HF.MINUS": {
+        "functionName": "HF.MINUS",
+        "signature": "HF.MINUS(Number; Number)",
+        "description": "Subtracts two values."
+    },
+    "HF.MULTIPLY": {
+        "functionName": "HF.MULTIPLY",
+        "signature": "HF.MULTIPLY(Number; Number)",
+        "description": "Multiplies two values."
+    },
+    "HF.NE": {
+        "functionName": "HF.NE",
+        "signature": "HF.NE(Value; Value)",
+        "description": "Tests two values for inequality."
+    },
+    "HF.POW": {
+        "functionName": "HF.POW",
+        "signature": "HF.POW(Number; Number)",
+        "description": "Computes power of two values."
+    },
+    "HF.UMINUS": {
+        "functionName": "HF.UMINUS",
+        "signature": "HF.UMINUS(Number)",
+        "description": "Negates the value."
+    },
+    "HF.UNARY_PERCENT": {
+        "functionName": "HF.UNARY_PERCENT",
+        "signature": "HF.UNARY_PERCENT(Number)",
+        "description": "Applies percent operator."
+    },
+    "HF.UPLUS": {
+        "functionName": "HF.UPLUS",
+        "signature": "HF.UPLUS(Number)",
+        "description": "Applies unary plus."
+    },
+    "AVEDEV": {
+        "functionName": "AVEDEV",
+        "signature": "AVEDEV(Number1; Number2; ...Number30)",
+        "description": "Returns the average deviation of the arguments."
+    },
+    "AVERAGE": {
+        "functionName": "AVERAGE",
+        "signature": "AVERAGE(Number1; Number2; ...Number30)",
+        "description": "Returns the average of the arguments."
+    },
+    "AVERAGEA": {
+        "functionName": "AVERAGEA",
+        "signature": "AVERAGEA(Value1; Value2; ... Value30)",
+        "description": "Returns the average of the arguments."
+    },
+    "AVERAGEIF": {
+        "functionName": "AVERAGEIF",
+        "signature": "AVERAGEIF(Range; Criterion [; Average_Range ])",
+        "description": "Returns the arithmetic mean of all cells in a range that satisfy a given condition."
+    },
+    "BESSELI": {
+        "functionName": "BESSELI",
+        "signature": "BESSELI(x; n)",
+        "description": "Returns value of Bessel function."
+    },
+    "BESSELJ": {
+        "functionName": "BESSELJ",
+        "signature": "BESSELJ(x; n)",
+        "description": "Returns value of Bessel function."
+    },
+    "BESSELK": {
+        "functionName": "BESSELK",
+        "signature": "BESSELK(x; n)",
+        "description": "Returns value of Bessel function."
+    },
+    "BESSELY": {
+        "functionName": "BESSELY",
+        "signature": "BESSELY(x; n)",
+        "description": "Returns value of Bessel function."
+    },
+    "BETA.DIST": {
+        "functionName": "BETA.DIST",
+        "signature": "BETA.DIST(Number1; Number2; Number3; Boolean[; Number4[; Number5]])",
+        "description": "Returns the denisty of Beta distribution."
+    },
+    "BETADIST": {
+        "functionName": "BETADIST",
+        "signature": "BETADIST(Number1; Number2; Number3; Boolean[; Number4[; Number5]])",
+        "description": "Returns the denisty of Beta distribution."
+    },
+    "BETA.INV": {
+        "functionName": "BETA.INV",
+        "signature": "BETA.INV(Number1; Number2; Number3[; Number4[; Number5]])",
+        "description": "Returns the inverse Beta distribution value."
+    },
+    "BETAINV": {
+        "functionName": "BETAINV",
+        "signature": "BETAINV(Number1; Number2; Number3[; Number4[; Number5]])",
+        "description": "Returns the inverse of Beta distribution value."
+    },
+    "BINOM.DIST": {
+        "functionName": "BINOM.DIST",
+        "signature": "BINOM.DIST(Number1; Number2; Number3; Boolean)",
+        "description": "Returns density of binomial distribution."
+    },
+    "BINOMDIST": {
+        "functionName": "BINOMDIST",
+        "signature": "BINOMDIST(Number1; Number2; Number3; Boolean)",
+        "description": "Returns density of binomial distribution."
+    },
+    "BINOM.INV": {
+        "functionName": "BINOM.INV",
+        "signature": "BINOM.INV(Number1; Number2; Number3)",
+        "description": "Returns inverse binomial distribution value."
+    },
+    "CHIDIST": {
+        "functionName": "CHIDIST",
+        "signature": "CHIDIST(X; Degrees)",
+        "description": "Returns probability of chi-square right-side distribution."
+    },
+    "CHIINV": {
+        "functionName": "CHIINV",
+        "signature": "CHIINV(P; Degrees)",
+        "description": "Returns inverse of chi-square right-side distribution."
+    },
+    "CHIINVRT": {
+        "functionName": "CHIINVRT",
+        "signature": "CHIINVRT(P; Degrees)",
+        "description": "Returns inverse of chi-square right-side distribution."
+    },
+    "CHISQ.DIST": {
+        "functionName": "CHISQ.DIST",
+        "signature": "CHISQ.DIST(X; Degrees; Mode)",
+        "description": "Returns value of chi-square distribution."
+    },
+    "CHIDISTRT": {
+        "functionName": "CHIDISTRT",
+        "signature": "CHIDISTRT(X; Degrees)",
+        "description": "Returns probability of chi-square right-side distribution."
+    },
+    "CHISQ.DIST.RT": {
+        "functionName": "CHISQ.DIST.RT",
+        "signature": "CHISQ.DIST.RT(X; Degrees)",
+        "description": "Returns probability of chi-square right-side distribution."
+    },
+    "CHISQ.INV": {
+        "functionName": "CHISQ.INV",
+        "signature": "CHISQ.INV.RT(P; Degrees)",
+        "description": "Returns inverse of chi-square distribution."
+    },
+    "CHISQ.INV.RT": {
+        "functionName": "CHISQ.INV.RT",
+        "signature": "CHISQ.INV.RT(P; Degrees)",
+        "description": "Returns inverse of chi-square right-side distribution."
+    },
+    "CHISQ.TEST": {
+        "functionName": "CHISQ.TEST",
+        "signature": "CHISQ.TEST(Array1; Array2)",
+        "description": "Returns chisquared-test value for a dataset."
+    },
+    "CHITEST": {
+        "functionName": "CHITEST",
+        "signature": "CHITEST(Array1; Array2)",
+        "description": "Returns chisquared-test value for a dataset."
+    },
+    "CONFIDENCE": {
+        "functionName": "CONFIDENCE",
+        "signature": "CONFIDENCE(Alpha; Stdev; Size)",
+        "description": "Returns upper confidence bound for normal distribution."
+    },
+    "CONFIDENCE.NORM": {
+        "functionName": "CONFIDENCE.NORM",
+        "signature": "CONFIDENCE.NORM(Alpha; Stdev; Size)",
+        "description": "Returns upper confidence bound for normal distribution."
+    },
+    "CONFIDENCE.T": {
+        "functionName": "CONFIDENCE.T",
+        "signature": "CONFIDENCE.T(Alpha; Stdev; Size)",
+        "description": "Returns upper confidence bound for T distribution."
+    },
+    "CORREL": {
+        "functionName": "CORREL",
+        "signature": "CORREL(Data1; Data2)",
+        "description": "Returns the correlation coefficient between two data sets."
+    },
+    "COUNT": {
+        "functionName": "COUNT",
+        "signature": "COUNT(Value1; Value2; ... Value30)",
+        "description": "Counts how many numbers are in the list of arguments."
+    },
+    "COUNTA": {
+        "functionName": "COUNTA",
+        "signature": "COUNTA(Value1; Value2; ... Value30)",
+        "description": "Counts how many values are in the list of arguments."
+    },
+    "COUNTBLANK": {
+        "functionName": "COUNTBLANK",
+        "signature": "COUNTBLANK(Range)",
+        "description": "Returns the number of empty cells."
+    },
+    "COUNTIF": {
+        "functionName": "COUNTIF",
+        "signature": "COUNTIF(Range; Criteria)",
+        "description": "Returns the number of cells that meet with certain criteria within a cell range."
+    },
+    "COUNTIFS": {
+        "functionName": "COUNTIFS",
+        "signature": "COUNTIFS(Range1; Criterion1 [; Range2; Criterion2 [; ...]])",
+        "description": "Returns the count of rows or columns that meet criteria in multiple ranges."
+    },
+    "COVAR": {
+        "functionName": "COVAR",
+        "signature": "COVAR(Data1; Data2)",
+        "description": "Returns the covariance between two data sets, population normalized."
+    },
+    "COVARIANCE.P": {
+        "functionName": "COVARIANCE.P",
+        "signature": "COVARIANCE.P(Data1; Data2)",
+        "description": "Returns the covariance between two data sets, population normalized."
+    },
+    "COVARIANCEP": {
+        "functionName": "COVARIANCEP",
+        "signature": "COVARIANCEP(Data1; Data2)",
+        "description": "Returns the covariance between two data sets, population normalized."
+    },
+    "COVARIANCE.S": {
+        "functionName": "COVARIANCE.S",
+        "signature": "COVARIANCE.S(Data1; Data2)",
+        "description": "Returns the covariance between two data sets, sample normalized."
+    },
+    "COVARIANCES": {
+        "functionName": "COVARIANCES",
+        "signature": "COVARIANCES(Data1; Data2)",
+        "description": "Returns the covariance between two data sets, sample normalized."
+    },
+    "CRITBINOM": {
+        "functionName": "CRITBINOM",
+        "signature": "CRITBINOM(Number1; Number2; Number3)",
+        "description": "Returns inverse binomial distribution value."
+    },
+    "DEVSQ": {
+        "functionName": "DEVSQ",
+        "signature": "DEVSQ(Number1; Number2; ...Number30)",
+        "description": "Returns sum of squared deviations."
+    },
+    "EXPON.DIST": {
+        "functionName": "EXPON.DIST",
+        "signature": "EXPON.DIST(Number1; Number2; Boolean)",
+        "description": "Returns density of a exponential distribution."
+    },
+    "EXPONDIST": {
+        "functionName": "EXPONDIST",
+        "signature": "EXPONDIST(Number1; Number2; Boolean)",
+        "description": "Returns density of a exponential distribution."
+    },
+    "FDIST": {
+        "functionName": "FDIST",
+        "signature": "FDIST(X; Degree1; Degree2)",
+        "description": "Returns probability of F right-side distribution."
+    },
+    "FINV": {
+        "functionName": "FINV",
+        "signature": "FINV(P; Degree1; Degree2)",
+        "description": "Returns inverse of F right-side distribution."
+    },
+    "F.DIST": {
+        "functionName": "F.DIST",
+        "signature": "F.DIST(X; Degree1; Degree2; Mode)",
+        "description": "Returns value of F distribution."
+    },
+    "F.DIST.RT": {
+        "functionName": "F.DIST.RT",
+        "signature": "F.DIST.RT(X; Degree1; Degree2)",
+        "description": "Returns probability of F right-side distribution."
+    },
+    "FDISTRT": {
+        "functionName": "FDISTRT",
+        "signature": "FDISTRT(X; Degree1; Degree2)",
+        "description": "Returns probability of F right-side distribution."
+    },
+    "F.INV": {
+        "functionName": "F.INV",
+        "signature": "F.INV.RT(P; Degree1; Degree2)",
+        "description": "Returns inverse of F distribution."
+    },
+    "F.INV.RT": {
+        "functionName": "F.INV.RT",
+        "signature": "F.INV.RT(P; Degree1; Degree2)",
+        "description": "Returns inverse of F right-side distribution."
+    },
+    "FINVRT": {
+        "functionName": "FINVRT",
+        "signature": "FINVRT(P; Degree1; Degree2)",
+        "description": "Returns inverse of F right-side distribution."
+    },
+    "FISHER": {
+        "functionName": "FISHER",
+        "signature": "FISHER(Number)",
+        "description": "Returns Fisher transformation value."
+    },
+    "FISHERINV": {
+        "functionName": "FISHERINV",
+        "signature": "FISHERINV(Number)",
+        "description": "Returns inverse Fischer transformation value."
+    },
+    "F.TEST": {
+        "functionName": "F.TEST",
+        "signature": "Z.TEST(Array1; Array2)",
+        "description": "Returns f-test value for a dataset."
+    },
+    "FTEST": {
+        "functionName": "FTEST",
+        "signature": "ZTEST(Array1; Array2)",
+        "description": "Returns f-test value for a dataset."
+    },
+    "GAMMA": {
+        "functionName": "GAMMA",
+        "signature": "GAMMA(Number)",
+        "description": "Returns value of Gamma function."
+    },
+    "GAMMA.DIST": {
+        "functionName": "GAMMA.DIST",
+        "signature": "GAMMA.DIST(Number1; Number2; Number3; Boolean)",
+        "description": "Returns density of Gamma distribution."
+    },
+    "GAMMADIST": {
+        "functionName": "GAMMADIST",
+        "signature": "GAMMADIST(Number1; Number2; Number3; Boolean)",
+        "description": "Returns density of Gamma distribution."
+    },
+    "GAMMALN": {
+        "functionName": "GAMMALN",
+        "signature": "GAMMALN(Number)",
+        "description": "Returns natural logarithm of Gamma function."
+    },
+    "GAMMALN.PRECISE": {
+        "functionName": "GAMMALN.PRECISE",
+        "signature": "GAMMALN.PRECISE(Number)",
+        "description": "Returns natural logarithm of Gamma function."
+    },
+    "GAMMA.INV": {
+        "functionName": "GAMMA.INV",
+        "signature": "GAMMA.INV(Number1; Number2; Number3)",
+        "description": "Returns inverse Gamma distribution value."
+    },
+    "GAMMAINV": {
+        "functionName": "GAMMAINV",
+        "signature": "GAMMAINV(Number1; Number2; Number3)",
+        "description": "Returns inverse Gamma distribution value."
+    },
+    "GAUSS": {
+        "functionName": "GAUSS",
+        "signature": "GAUSS(Number)",
+        "description": "Returns the probability of gaussian variable fall more than this many times standard deviation from mean."
+    },
+    "GEOMEAN": {
+        "functionName": "GEOMEAN",
+        "signature": "GEOMEAN(Number1; Number2; ...Number30)",
+        "description": "Returns the geometric average."
+    },
+    "HARMEAN": {
+        "functionName": "HARMEAN",
+        "signature": "HARMEAN(Number1; Number2; ...Number30)",
+        "description": "Returns the harmonic average."
+    },
+    "HYPGEOMDIST": {
+        "functionName": "HYPGEOMDIST",
+        "signature": "HYPGEOMDIST(Number1; Number2; Number3; Number4; Boolean)",
+        "description": "Returns density of hypergeometric distribution."
+    },
+    "HYPGEOM.DIST": {
+        "functionName": "HYPGEOM.DIST",
+        "signature": "HYPGEOM.DIST(Number1; Number2; Number3; Number4; Boolean)",
+        "description": "Returns density of hypergeometric distribution."
+    },
+    "LARGE": {
+        "functionName": "LARGE",
+        "signature": "LARGE(Range; K)",
+        "description": "Returns k-th largest value in a range."
+    },
+    "LOGNORM.DIST": {
+        "functionName": "LOGNORM.DIST",
+        "signature": "LOGNORM.DIST(X; Mean; Stddev; Mode)",
+        "description": "Returns density of lognormal distribution."
+    },
+    "LOGNORMDIST": {
+        "functionName": "LOGNORMDIST",
+        "signature": "LOGNORMDIST(X; Mean; Stddev; Mode)",
+        "description": "Returns density of lognormal distribution."
+    },
+    "LOGNORM.INV": {
+        "functionName": "LOGNORM.INV",
+        "signature": "LOGNORM.INV(P; Mean; Stddev)",
+        "description": "Returns value of inverse lognormal distribution."
+    },
+    "LOGNORMINV": {
+        "functionName": "LOGNORMINV",
+        "signature": "LOGNORMINV(P; Mean; Stddev)",
+        "description": "Returns value of inverse lognormal distribution."
+    },
+    "LOGINV": {
+        "functionName": "LOGINV",
+        "signature": "LOGINV(P; Mean; Stddev)",
+        "description": "Returns value of inverse lognormal distribution."
+    },
+    "MAX": {
+        "functionName": "MAX",
+        "signature": "MAX(Number1; Number2; ...Number30)",
+        "description": "Returns the maximum value in a list of arguments."
+    },
+    "MAXA": {
+        "functionName": "MAXA",
+        "signature": "MAXA(Value1; Value2; ... Value30)",
+        "description": "Returns the maximum value in a list of arguments."
+    },
+    "MEDIAN": {
+        "functionName": "MEDIAN",
+        "signature": "MEDIAN(Number1; Number2; ...Number30)",
+        "description": "Returns the median of a set of numbers."
+    },
+    "MIN": {
+        "functionName": "MIN",
+        "signature": "MIN(Number1; Number2; ...Number30)",
+        "description": "Returns the minimum value in a list of arguments."
+    },
+    "MINA": {
+        "functionName": "MINA",
+        "signature": "MINA(Value1; Value2; ... Value30)",
+        "description": "Returns the minimum value in a list of arguments."
+    },
+    "NEGBINOM.DIST": {
+        "functionName": "NEGBINOM.DIST",
+        "signature": "NEGBINOM.DIST(Number1; Number2; Number3; Mode)",
+        "description": "Returns density of negative binomial distribution."
+    },
+    "NEGBINOMDIST": {
+        "functionName": "NEGBINOMDIST",
+        "signature": "NEGBINOMDIST(Number1; Number2; Number3; Mode)",
+        "description": "Returns density of negative binomial distribution."
+    },
+    "NORM.DIST": {
+        "functionName": "NORM.DIST",
+        "signature": "NORM.DIST(X; Mean; Stddev; Mode)",
+        "description": "Returns density of normal distribution."
+    },
+    "NORMDIST": {
+        "functionName": "NORMDIST",
+        "signature": "NORMSDIST(X; Mode)",
+        "description": "Returns density of normal distribution."
+    },
+    "NORM.S.DIST": {
+        "functionName": "NORM.S.DIST",
+        "signature": "NORM.S.DIST(X; Mode)",
+        "description": "Returns density of normal distribution."
+    },
+    "NORM.INV": {
+        "functionName": "NORM.INV",
+        "signature": "NORM.INV(P; Mean; Stddev)",
+        "description": "Returns value of inverse normal distribution."
+    },
+    "NORMINV": {
+        "functionName": "NORMINV",
+        "signature": "NORMINV(P; Mean; Stddev)",
+        "description": "Returns value of inverse normal distribution."
+    },
+    "NORM.S.INV": {
+        "functionName": "NORM.S.INV",
+        "signature": "NORM.S.INV(P)",
+        "description": "Returns value of inverse normal distribution."
+    },
+    "NORMSINV": {
+        "functionName": "NORMSINV",
+        "signature": "NORMSINV(P)",
+        "description": "Returns value of inverse normal distribution."
+    },
+    "PEARSON": {
+        "functionName": "PEARSON",
+        "signature": "PEARSON(Data1; Data2)",
+        "description": "Returns the correlation coefficient between two data sets."
+    },
+    "PHI": {
+        "functionName": "PHI",
+        "signature": "PHI(X)",
+        "description": "Returns probability densitity of normal distribution."
+    },
+    "POISSON": {
+        "functionName": "POISSON",
+        "signature": "POISSON(X; Mean; Mode)",
+        "description": "Returns density of Poisson distribution."
+    },
+    "POISSON.DIST": {
+        "functionName": "POISSON.DIST",
+        "signature": "POISSON.DIST(X; Mean; Mode)",
+        "description": "Returns density of Poisson distribution."
+    },
+    "POISSONDIST": {
+        "functionName": "POISSONDIST",
+        "signature": "POISSONDIST(X; Mean; Mode)",
+        "description": "Returns density of Poisson distribution."
+    },
+    "RSQ": {
+        "functionName": "RSQ",
+        "signature": "RSQ(Data1; Data2)",
+        "description": "Returns the squared correlation coefficient between two data sets."
+    },
+    "SKEW": {
+        "functionName": "SKEW",
+        "signature": "SKEW(Number1; Number2; ...Number30)",
+        "description": "Returns skeweness of a sample."
+    },
+    "SKEW.P": {
+        "functionName": "SKEW.P",
+        "signature": "SKEW.P(Number1; Number2; ...Number30)",
+        "description": "Returns skeweness of a population."
+    },
+    "SKEWP": {
+        "functionName": "SKEWP",
+        "signature": "SKEWP(Number1; Number2; ...Number30)",
+        "description": "Returns skeweness of a population."
+    },
+    "SLOPE": {
+        "functionName": "SLOPE",
+        "signature": "SLOPE(Array1; Array2)",
+        "description": "Returns the slope of a linear regression line."
+    },
+    "SMALL": {
+        "functionName": "SMALL",
+        "signature": "SMALL(Range; K)",
+        "description": "Returns k-th smallest value in a range."
+    },
+    "STANDARDIZE": {
+        "functionName": "STANDARDIZE",
+        "signature": "STANDARDIZE(X; Mean; Stddev)",
+        "description": "Returns normalized value wrt expected value and standard deviation."
+    },
+    "STDEV": {
+        "functionName": "STDEV",
+        "signature": "STDEV(Value1; Value2; ... Value30)",
+        "description": "Returns standard deviation of a sample."
+    },
+    "STDEVA": {
+        "functionName": "STDEVA",
+        "signature": "STDEVA(Value1; Value2; ... Value30)",
+        "description": "Returns standard deviation of a sample."
+    },
+    "STDEVP": {
+        "functionName": "STDEVP",
+        "signature": "STDEVP(Value1; Value2; ... Value30)",
+        "description": "Returns standard deviation of a population."
+    },
+    "STDEV.P": {
+        "functionName": "STDEV.P",
+        "signature": "STDEV.P(Value1; Value2; ... Value30)",
+        "description": "Returns standard deviation of a population."
+    },
+    "STDEVPA": {
+        "functionName": "STDEVPA",
+        "signature": "STDEVPA(Value1; Value2; ... Value30)",
+        "description": "Returns standard deviation of a population."
+    },
+    "STDEV.S": {
+        "functionName": "STDEV.S",
+        "signature": "STDEV.S(Value1; Value2; ... Value30)",
+        "description": "Returns standard deviation of a sample."
+    },
+    "STDEVS": {
+        "functionName": "STDEVS",
+        "signature": "STDEVS(Value1; Value2; ... Value30)",
+        "description": "Returns standard deviation of a sample."
+    },
+    "STEYX": {
+        "functionName": "STEYX",
+        "signature": "STEYX(Array1; Array2)",
+        "description": "Returns standard error for predicted of the predicted y value for each x value."
+    },
+    "TDIST": {
+        "functionName": "TDIST",
+        "signature": "TDIST(X; Degrees; Mode)",
+        "description": "Returns density of Student-t distribution, both-sided or right-tailed."
+    },
+    "T.DIST": {
+        "functionName": "T.DIST",
+        "signature": "T.DIST(X; Degrees; Mode)",
+        "description": "Returns density of Student-t distribution."
+    },
+    "T.DIST.2T": {
+        "functionName": "T.DIST.2T",
+        "signature": "T.DIST.2T(X; Degrees)",
+        "description": "Returns density of Student-t distribution, both-sided."
+    },
+    "TDIST2T": {
+        "functionName": "TDIST2T",
+        "signature": "TDIST2T(X; Degrees)",
+        "description": "Returns density of Student-t distribution, both-sided."
+    },
+    "T.DIST.RT": {
+        "functionName": "T.DIST.RT",
+        "signature": "T.DIST.RT(X; Degrees)",
+        "description": "Returns density of Student-t distribution, right-tailed."
+    },
+    "TDISTRT": {
+        "functionName": "TDISTRT",
+        "signature": "TDISTRT(X; Degrees)",
+        "description": "Returns density of Student-t distribution, right-tailed."
+    },
+    "TINV": {
+        "functionName": "TINV",
+        "signature": "TINV(P; Degrees)",
+        "description": "Returns inverse Student-t distribution, both-sided."
+    },
+    "T.INV": {
+        "functionName": "T.INV",
+        "signature": "T.INV(P; Degrees)",
+        "description": "Returns inverse Student-t distribution."
+    },
+    "T.INV.2T": {
+        "functionName": "T.INV.2T",
+        "signature": "T.INV.2T(P; Degrees)",
+        "description": "Returns inverse Student-t distribution, both-sided."
+    },
+    "TINV2T": {
+        "functionName": "TINV2T",
+        "signature": "TINV2T(P; Degrees)",
+        "description": "Returns inverse Student-t distribution, both-sided."
+    },
+    "TTEST": {
+        "functionName": "TTEST",
+        "signature": "TTEST(Array1; Array2)",
+        "description": "Returns t-test value for a dataset."
+    },
+    "T.TEST": {
+        "functionName": "T.TEST",
+        "signature": "T.TEST(Array1; Array2)",
+        "description": "Returns t-test value for a dataset."
+    },
+    "VAR": {
+        "functionName": "VAR",
+        "signature": "VAR(Value1; Value2; ... Value30)",
+        "description": "Returns variance of a sample."
+    },
+    "VARA": {
+        "functionName": "VARA",
+        "signature": "VARA(Value1; Value2; ... Value30)",
+        "description": "Returns variance of a sample."
+    },
+    "VARP": {
+        "functionName": "VARP",
+        "signature": "VARP(Value1; Value2; ... Value30)",
+        "description": "Returns variance of a population."
+    },
+    "VAR.P": {
+        "functionName": "VAR.P",
+        "signature": "VAR.P(Value1; Value2; ... Value30)",
+        "description": "Returns variance of a population."
+    },
+    "VARPA": {
+        "functionName": "VARPA",
+        "signature": "VARPA(Value1; Value2; ... Value30)",
+        "description": "Returns variance of a population."
+    },
+    "VAR.S": {
+        "functionName": "VAR.S",
+        "signature": "VAR.S(Value1; Value2; ... Value30)",
+        "description": "Returns variance of a sample."
+    },
+    "VARS": {
+        "functionName": "VARS",
+        "signature": "VARS(Value1; Value2; ... Value30)",
+        "description": "Returns variance of a sample."
+    },
+    "WEIBULL": {
+        "functionName": "WEIBULL",
+        "signature": "WEIBULL(Number1; Number2; Number3; Boolean)",
+        "description": "Returns density of Weibull distribution."
+    },
+    "WEIBULL.DIST": {
+        "functionName": "WEIBULL.DIST",
+        "signature": "WEIBULL.DIST(Number1; Number2; Number3; Boolean)",
+        "description": "Returns density of Weibull distribution."
+    },
+    "WEIBULLDIST": {
+        "functionName": "WEIBULLDIST",
+        "signature": "WEIBULLDIST(Number1; Number2; Number3; Boolean)",
+        "description": "Returns density of Weibull distribution."
+    },
+    "Z.TEST": {
+        "functionName": "Z.TEST",
+        "signature": "Z.TEST(Array; X[; Sigma])",
+        "description": "Returns z-test value for a dataset."
+    },
+    "ZTEST": {
+        "functionName": "ZTEST",
+        "signature": "ZTEST(Array; X[; Sigma])",
+        "description": "Returns z-test value for a dataset."
+    },
+    "CHAR": {
+        "functionName": "CHAR",
+        "signature": "CHAR(Number)",
+        "description": "Converts a number into a character according to the current code table."
+    },
+    "CLEAN": {
+        "functionName": "CLEAN",
+        "signature": "CLEAN(\"Text\")",
+        "description": "Returns text that has been \"cleaned\" of line breaks and other non-printable characters."
+    },
+    "CODE": {
+        "functionName": "CODE",
+        "signature": "CODE(\"Text\")",
+        "description": "Returns a numeric code for the first character in a text string."
+    },
+    "CONCATENATE": {
+        "functionName": "CONCATENATE",
+        "signature": "CONCATENATE(\"Text1\"; ...; \"Text30\")",
+        "description": "Combines several text strings into one string."
+    },
+    "EXACT": {
+        "functionName": "EXACT",
+        "signature": "EXACT(Text; Text)",
+        "description": "Returns TRUE if both text strings are exactly the same."
+    },
+    "FIND": {
+        "functionName": "FIND",
+        "signature": "FIND( \"Text1\"; \"Text2\"[; Number])",
+        "description": "Returns the location of one text string inside another."
+    },
+    "LEFT": {
+        "functionName": "LEFT",
+        "signature": "LEFT(\"Text\"; Number)",
+        "description": "Extracts a given number of characters from the left side of a text string."
+    },
+    "LEN": {
+        "functionName": "LEN",
+        "signature": "LEN(\"Text\")",
+        "description": "Returns length of a given text."
+    },
+    "LOWER": {
+        "functionName": "LOWER",
+        "signature": "LOWER(Text)",
+        "description": "Returns text converted to lowercase."
+    },
+    "MID": {
+        "functionName": "MID",
+        "signature": "MID(Text, Start_position, Length)",
+        "description": "Returns substring of a given length starting from Start_position."
+    },
+    "PROPER": {
+        "functionName": "PROPER",
+        "signature": "PROPER(\"Text\")",
+        "description": "Capitalizes words given text string."
+    },
+    "REPLACE": {
+        "functionName": "REPLACE",
+        "signature": "REPLACE(Text; Start_position; Length; New_text)",
+        "description": "Replaces substring of a text of a given length that starts at given position."
+    },
+    "REPT": {
+        "functionName": "REPT",
+        "signature": "REPT(\"Text\"; Number)",
+        "description": "Repeats text a given number of times."
+    },
+    "RIGHT": {
+        "functionName": "RIGHT",
+        "signature": "RIGHT(\"Text\"; Number)",
+        "description": "Extracts a given number of characters from the right side of a text string."
+    },
+    "SEARCH": {
+        "functionName": "SEARCH",
+        "signature": "SEARCH( \"Text1\"; \"Text2\"[; Number])",
+        "description": "Returns the location of one text string inside another. (Allows the use of wildcards.)"
+    },
+    "SPLIT": {
+        "functionName": "SPLIT",
+        "signature": "SPLIT(Text, Delimiter, [Split_by_each], [Remove_empty_text])",
+        "description": "Divides text around a specified character or string, and puts each fragment into a separate cell in the row."
+    },
+    "SUBSTITUTE": {
+        "functionName": "SUBSTITUTE",
+        "signature": "SUBSTITUTE(Text; Old_text; New_text; [Occurrence])",
+        "description": "Returns string where occurrences of Old_text are replaced by New_text. Replaces only specific occurrence if last parameter is provided."
+    },
+    "T": {
+        "functionName": "T",
+        "signature": "T(Value)",
+        "description": "Returns text if given value is text, empty string otherwise."
+    },
+    "TEXT": {
+        "functionName": "TEXT",
+        "signature": "TEXT(Number; Format)",
+        "description": "Converts a number into text according to a given format."
+    },
+    "TRIM": {
+        "functionName": "TRIM",
+        "signature": "TRIM(\"Text\")",
+        "description": "Strips extra spaces from text."
+    },
+    "UNICHAR": {
+        "functionName": "UNICHAR",
+        "signature": "UNICHAR(Number)",
+        "description": "Returns the character created by using provided code point."
+    },
+    "UNICODE": {
+        "functionName": "UNICODE",
+        "signature": "UNICODE(Text)",
+        "description": "Returns the Unicode code point of a first character of a text."
+    },
+    "UPPER": {
+        "functionName": "UPPER",
+        "signature": "UPPER(Text)",
+        "description": "Returns text converted to uppercase."
     }
 }
