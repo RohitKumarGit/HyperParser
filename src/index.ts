@@ -164,9 +164,9 @@ export class FormulaLanguage {
               let dom = document.createElement("div");
               dom.className = "cm-details";
               dom.innerHTML = fdetails[completion.label.toString().trim()]
-                ? `<b>${
-                    fdetails[completion.label.toString().trim()].signature
-                  }</b>`
+                ? `<b>${fdetails[
+                    completion.label.toString().trim()
+                  ].signature.replace(new RegExp(";", "g"), ",")}</b>`
                 : "";
               return dom;
             },
