@@ -395,7 +395,7 @@ TRIM { "TRIM"}
 UNICHAR { "UNICHAR"}
 UNICODE { "UNICODE"}
 UPPER { "UPPER"}
-Variable { ("{" $[a-zA-Z_-]+ "}" | "{$" $[a-zA-Z_-]+ "}" )}
+Variable { ("{" $[0-9a-zA-Z_-]+ "}" | "{$" $[0-9a-zA-Z_-]+ "}" )}
 Number {std.digit+} 
 String { '"' std.asciiLetter* '"'}
 Assign {"="}
@@ -403,6 +403,6 @@ ArtithMeticOperators {("+"|"*"|"-")}
 LogicalOperators {("&&" | "||")}
 "$"
  "(" ")" "[" "]" "{" "}"
-Newline { $[\n]+}
+NewLine {$[\n]+}
 }
-@skip {Newline}
+@skip {NewLine}

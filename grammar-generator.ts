@@ -6,7 +6,7 @@ tep { Variable | Number | Functions | String }
 Unlimited {  tep ',' Unlimited | "" | tep }
 Condition { tep Operators tep}`;
 const part2 = `@tokens {\n`;
-const part3 = `Variable { ("{" $[a-zA-Z_-]+ "}" | "{$" $[a-zA-Z_-]+ "}" )}
+const part3 = `Variable { ("{" $[0-9a-zA-Z_-]+ "}" | "{$" $[0-9a-zA-Z_-]+ "}" )}
 Number {std.digit+} 
 String { '"' std.asciiLetter* '"'}
 Assign {"="}
@@ -14,7 +14,7 @@ ArtithMeticOperators {("+"|"*"|"-")}
 LogicalOperators {("&&" | "||")}
 "$"
  "(" ")" "[" "]" "{" "}"
- Newline {$[\n]+}
+ NewLine {$[\\n]+}
 }
 @skip {NewLine}`;
 let functionPattenrs = [];
