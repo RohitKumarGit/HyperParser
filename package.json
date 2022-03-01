@@ -1,6 +1,6 @@
 {
   "name": "formula-parser-editor",
-  "version": "8.0.0",
+  "version": "9.2.0",
   "type": "commonjs",
   "scripts": {
     "dev": "vite",

@@ -10,7 +10,7 @@
         "numberOfParams": [0]
     },
     {
-        "functionName": "IF ",
+        "functionName": "IF",
         "description": "Specifies a logical test to be performed.",
         "detail": "Specifies a logical test to be performed.",
         "numberOfParams": [3]

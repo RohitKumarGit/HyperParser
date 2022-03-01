@@ -55,7 +55,7 @@ const readFilesFromADirecttory = function (directoryName) {
         console.log(functionName, count);
         let t = [];
         for (let i = 0; i < count; i++) {
-          t.push("tep");
+          t.push("expression");
         }
 
         functionPattenrs.push(`${token} "(" ${t.join("','")} ")"`);

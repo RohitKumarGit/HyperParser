@@ -24,6 +24,7 @@ var math_and_trigo_json_1 = __importDefault(require("./function-definitions/math
 var matrix_json_1 = __importDefault(require("./function-definitions/matrix.json"));
 var operator_json_1 = __importDefault(require("./function-definitions/operator.json"));
 var text_json_1 = __importDefault(require("./function-definitions/text.json"));
+var custom_functions_json_1 = __importDefault(require("./function-definitions/custom-functions.json"));
 exports.functionDefinitions = [
     dateAndTime_json_1.default,
     statistical_json_1.default,
@@ -37,6 +38,7 @@ exports.functionDefinitions = [
     matrix_json_1.default,
     operator_json_1.default,
     text_json_1.default,
+    custom_functions_json_1.default,
 ];
 exports.TokenConfig = {
     Variable: highlight_1.tags.variableName,
@@ -192,6 +194,7 @@ var FormulaLanguage = /** @class */ (function () {
         configurable: true,
         writable: true,
         value: function (context) {
+            this.editorView.dispatch();
             var word = context.matchBefore(/[\w,@[a-zA-Z_-]*]*/);
             if (word.from == word.to && word.text.charAt(word.from) === "@") {
                 return {
@@ -227,6 +230,7 @@ var FormulaLanguage = /** @class */ (function () {
             (0, language_1.syntaxTree)(view.state).iterate({
                 enter: function (type, from, to, _get) {
                     if (type.isError) {
+                        console.log(from, to);
                         diag.push({
                             from: from,
                             to: to,
