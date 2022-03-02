@@ -65,11 +65,12 @@ export class TextStyle {
   tag: Tag;
   color: string;
   fontStyle?: string;
+  background?: string;
 }
 export class FormulaLanguageConfig {
   styleTags = TokenConfig;
   functionNames: string[] = [];
-  style?: any[] = [];
+  style?: TextStyle[] = [];
   autoCompletionOptions: AutoComplete[];
   variablesCompletions?: AutoComplete[] = [];
   errorMessage: string;
@@ -197,13 +198,6 @@ export class FormulaLanguage {
       }),
 
       parent: document.getElementById(this.config.containerId),
-    });
-    this.editorView.state.update({
-      changes: {
-        from: 0,
-        to: this.editorView.state.doc.length,
-        insert: "heuu",
-      },
     });
   }
   getValue() {
