@@ -203,6 +203,16 @@ var FormulaLanguage = /** @class */ (function () {
                     filter: false,
                 };
             }
+            if (word.text.indexOf(",") !== -1) {
+                return {
+                    from: word.text.lastIndexOf(",") + word.from + 1,
+                    options: this.config.autoCompletionOptions.filter(function (variable) {
+                        return variable.label.toLowerCase().indexOf(word.text.split(",").pop()) !==
+                            -1;
+                    }),
+                    filter: false,
+                };
+            }
             if (word.text.startsWith("@")) {
                 return {
                     from: word.from,
@@ -230,7 +240,6 @@ var FormulaLanguage = /** @class */ (function () {
             (0, language_1.syntaxTree)(view.state).iterate({
                 enter: function (type, from, to, _get) {
                     if (type.isError) {
-                        console.log(from, to);
                         diag.push({
                             from: from,
                             to: to,
@@ -273,7 +282,7 @@ var FormulaLanguage = /** @class */ (function () {
                                 var dom = document.createElement("div");
                                 dom.className = "cm-details";
                                 dom.innerHTML = index_json_1.default[completion.label.toString().trim()]
-                                    ? "<b>".concat(index_json_1.default[completion.label.toString().trim()].signature, "</b>")
+                                    ? "<b>".concat(index_json_1.default[completion.label.toString().trim()].signature.replace(new RegExp(";", "g"), ","), "</b>")
                                     : "";
                                 return dom;
                             },

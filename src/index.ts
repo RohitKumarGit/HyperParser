@@ -100,7 +100,17 @@ export class FormulaLanguage {
         filter: false,
       };
     }
-
+    if (word.text.indexOf(",") !== -1) {
+      return {
+        from: word.text.lastIndexOf(",") + word.from + 1,
+        options: this.config.autoCompletionOptions.filter(
+          (variable) =>
+            variable.label.toLowerCase().indexOf(word.text.split(",").pop()) !==
+            -1
+        ),
+        filter: false,
+      };
+    }
     if (word.text.startsWith("@")) {
       return {
         from: word.from,
@@ -114,6 +124,7 @@ export class FormulaLanguage {
         filter: false,
       };
     }
+
     return {
       from: word.from,
       options: this.config.autoCompletionOptions,
@@ -125,7 +136,6 @@ export class FormulaLanguage {
     syntaxTree(view.state).iterate({
       enter: (type, from, to, _get) => {
         if (type.isError) {
-          console.log(from, to);
           diag.push({
             from,
             to,
