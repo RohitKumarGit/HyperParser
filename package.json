@@ -1,26 +1,27 @@
 {
-  "name": "formula-parser-editor",
-  "version": "13.2.0",
-  "type": "commonjs",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "generate:grammar:json": "ts-node grammar-generator.ts",
-    "build:grammar": "cd src && lezer-generator language.grammar -o grammar.ts"
-  },
-  "dependencies": {
-    "@codemirror/basic-setup": "^0.19.1",
-    "@codemirror/closebrackets": "^0.19.0",
-    "@codemirror/highlight": "^0.19.7",
-    "@codemirror/lint": "^0.19.3",
-    "@codemirror/tooltip": "^0.19.15",
-    "@lezer/generator": "^0.15.3",
-    "@types/node": "^17.0.16",
-    "codemirror": "^5.65.1"
-  },
-  "devDependencies": {
-    "typescript": "^4.4.4",
-    "vite": "^2.7.2"
-  }
+ "name": "formula-parser-editor",
+ "version": "13.2.0",
+ "type": "commonjs",
+ "scripts": {
+  "dev": "vite",
+  "build": "tsc && vite build",
+  "preview": "vite preview",
+  "generate:grammar:json": "ts-node grammar-generator.ts",
+  "build:grammar": "cd src && lezer-generator language.grammar -o grammar.ts"
+ },
+ "dependencies": {
+  "@codemirror/basic-setup": "^0.19.1",
+  "@codemirror/closebrackets": "^0.19.0",
+  "@codemirror/highlight": "^0.19.7",
+  "@codemirror/lint": "^0.19.3",
+  "@codemirror/tooltip": "^0.19.15",
+  "@lezer/generator": "^0.15.3",
+  "@types/node": "^17.0.16",
+  "codemirror": "^5.65.1",
+  "hot-formula-parser": "^4.0.0"
+ },
+ "devDependencies": {
+  "typescript": "^4.4.4",
+  "vite": "^2.7.2"
+ }
 }

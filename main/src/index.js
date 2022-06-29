@@ -110,6 +110,12 @@ var TextStyle = /** @class */ (function () {
             writable: true,
             value: void 0
         });
+        Object.defineProperty(this, "background", {
+            enumerable: true,
+            configurable: true,
+            writable: true,
+            value: void 0
+        });
     }
     return TextStyle;
 }());
@@ -306,13 +312,6 @@ var FormulaLanguage = /** @class */ (function () {
                     extensions: [basic_setup_1.basicSetup, this.getLanguage(), view_1.EditorView.lineWrapping],
                 }),
                 parent: document.getElementById(this.config.containerId),
-            });
-            this.editorView.state.update({
-                changes: {
-                    from: 0,
-                    to: this.editorView.state.doc.length,
-                    insert: "heuu",
-                },
             });
         }
     });

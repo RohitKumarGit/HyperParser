@@ -1,5 +1,6 @@
 import { COMPLETION_TYPES, FormulaLanguage, TokenConfig } from ".";
 import "./style.css";
+import { Parser } from "hot-formula-parser";
 import dateAndTime from "./function-definitions/dateAndTime.json";
 import statistical from "./function-definitions/statistical.json";
 import array from "./function-definitions/array.json";
@@ -40,7 +41,7 @@ funtions.forEach((fn) => {
     });
   });
 });
-const variableNames = ["single_sel", "$status"];
+const variableNames = ["variable1", "variable2", "variable3", "variable4"];
 variableNames.forEach((t) => {
   autoCompletionOptions.push({
     label: t,
@@ -92,4 +93,41 @@ const formulaLanguage = new FormulaLanguage({
   lintingDelay: 100,
 });
 formulaLanguage.displayEditor();
+const parser = new Parser();
+function show() {
+  alert("hi");
+}
 // add event lister to button to display the editor
+const variableToValueMap = {};
+function updateVariableValues() {
+  variableNames.forEach((varName) => {
+    const val = (document.getElementById(varName) as HTMLInputElement).value;
+    variableToValueMap[`{${varName}}`] = val;
+  });
+}
+function replaceVariables(text: string, replaceValues: object) {
+  Object.keys(replaceValues).forEach((varName) => {
+    text = text.replace(new RegExp(varName, "g"), replaceValues[varName]);
+  });
+  return text;
+}
+window.onload = () => {
+  updateVariableValues();
+};
+const parse = function (expression: string) {};
+document.getElementById("button").addEventListener("click", (e) => {
+  updateVariableValues();
+  console.log(variableToValueMap);
+  const text = replaceVariables(formulaLanguage.getValue(), variableToValueMap);
+  const resp = parser.parse(text);
+  console.log(resp);
+  if (resp.error !== null) {
+    document.getElementById(
+      "result"
+    ).innerHTML = `<h1 class="is-size-4 is-danger">Error! </h1>`;
+  } else {
+    document.getElementById(
+      "result"
+    ).innerHTML = `<h1 class="is-size-4 ">Result : ${resp.result} </h1>`;
+  }
+});
